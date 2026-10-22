@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T00:00:00Z",
+  "title": "Design System: Diagnóstico Cero Caos",
+  "extensions": {
+    "colorMeta": {
+      "ground": { "role": "neutral", "displayName": "Fondo piedra", "canonical": "#f4f4f2", "tonalRamp": ["#262625", "#3d3d3b", "#585856", "#767674", "#9b9b99", "#c2c2c0", "#e0e0de", "#f4f4f2"] },
+      "sheet": { "role": "neutral", "displayName": "Hoja blanca", "canonical": "#ffffff", "tonalRamp": ["#262626", "#404040", "#5c5c5c", "#7a7a7a", "#9e9e9e", "#c4c4c4", "#e4e4e4", "#ffffff"] },
+      "tint": { "role": "neutral", "displayName": "Tinte de sección", "canonical": "#f7f7f5", "tonalRamp": ["#262625", "#3e3e3c", "#595957", "#777775", "#9c9c9a", "#c3c3c1", "#e2e2e0", "#f7f7f5"] },
+      "ink": { "role": "primary", "displayName": "Tinta carbón", "canonical": "#262626", "tonalRamp": ["#0d0d0d", "#1a1a1a", "#262626", "#4d4d4d", "#737373", "#a6a6a6", "#d4d4d4", "#f0f0f0"] },
+      "ink-2": { "role": "neutral", "displayName": "Tinta secundaria", "canonical": "#565656", "tonalRamp": ["#1c1c1c", "#2e2e2e", "#404040", "#565656", "#767676", "#a0a0a0", "#cfcfcf", "#ececec"] },
+      "sage": { "role": "secondary", "displayName": "Salvia apagada", "canonical": "#6f8584", "tonalRamp": ["#1c2424", "#2c3837", "#3f4f4e", "#586d6c", "#6f8584", "#93a5a4", "#bccac9", "#e3eaea"] },
+      "line": { "role": "neutral", "displayName": "Línea", "canonical": "#e7e7e4", "tonalRamp": ["#3a3a38", "#575755", "#787876", "#9d9d9b", "#bdbdbb", "#d4d4d2", "#e7e7e4", "#f4f4f2"] },
+      "line-strong": { "role": "neutral", "displayName": "Línea fuerte", "canonical": "#d4d4d0", "tonalRamp": ["#33332f", "#4f4f4b", "#6f6f6b", "#8f8f8b", "#aeaeaa", "#c4c4c0", "#d4d4d0", "#ebebe8"] },
+      "coral": { "role": "tertiary", "displayName": "Coral de señal", "canonical": "#ff5b5b", "tonalRamp": ["#4d1313", "#7a1f1f", "#a82e2e", "#d94545", "#ff5b5b", "#ff8585", "#ffb0b0", "#ffe0e0"] },
+      "night": { "role": "neutral", "displayName": "Noche", "canonical": "#1a1a1c", "tonalRamp": ["#0a0a0b", "#131314", "#1a1a1c", "#2a2a2d", "#46464a", "#6e6e72", "#a0a0a4", "#d6d6d8"] },
+      "night-2": { "role": "neutral", "displayName": "Noche 2", "canonical": "#2a2a2d", "tonalRamp": ["#101011", "#1a1a1c", "#2a2a2d", "#3b3b3f", "#555559", "#78787c", "#a5a5a8", "#d8d8da"] },
+      "whatsapp-green": { "role": "tertiary", "displayName": "Verde WhatsApp", "canonical": "#128c4a", "tonalRamp": ["#04230f", "#07381d", "#0b5230", "#0f6e3d", "#128c4a", "#4aab77", "#88cba6", "#c9e8d7"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Titulares de sección y hero en Geist 400 con tracking -0.04em." },
+      "headline": { "displayName": "Headline", "purpose": "Titulares secundarios en peso ligero 300." },
+      "title": { "displayName": "Title", "purpose": "Líneas fuertes en el cuerpo, peso 500." },
+      "body": { "displayName": "Body", "purpose": "Párrafos en tinta secundaria, máximo 68ch." },
+      "label": { "displayName": "Label", "purpose": "Metadatos, microtexto y pies, sin mayúsculas forzadas." },
+      "accent-serif": { "displayName": "Accent Serif", "purpose": "Bodoni Moda itálica en palabras sueltas y números de pasos." }
+    },
+    "shadows": [
+      { "name": "sheet", "value": "0 1px 0 rgba(0,0,0,0.03)", "purpose": "Borde apenas perceptible de la hoja." },
+      { "name": "floating-bar", "value": "0 0 0 1px #e7e7e4, 0 6px 24px -10px rgba(0,0,0,0.12)", "purpose": "Barra superior flotante." },
+      { "name": "dark-object", "value": "0 0 0 1px rgba(255,255,255,0.08) inset, 0 2px 0 rgba(255,255,255,0.06) inset, 0 30px 60px -22px rgba(0,0,0,0.5), 0 12px 22px -12px rgba(0,0,0,0.35)", "purpose": "Bandeja del hero y objetos oscuros." },
+      { "name": "ticket", "value": "0 0 0 1px #e7e7e4, 0 40px 60px -32px rgba(0,0,0,0.28), 0 12px 22px -14px rgba(0,0,0,0.16)", "purpose": "Ficha de oferta." },
+      { "name": "button-dark", "value": "0 10px 22px -12px rgba(0,0,0,0.55)", "purpose": "Botón píldora oscuro en reposo." },
+      { "name": "button-dark-hover", "value": "0 16px 28px -14px rgba(18,140,74,0.6)", "purpose": "Botón en hover con halo verde." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Curva única para botones, reproductor y preguntas frecuentes (0.3 a 0.4s)." },
+      { "name": "inbox-cool", "value": "2.4s ease, escalonado 0.35s por fila", "purpose": "El punto coral se enfría a gris y la edad pasa de ahora a hace N días." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Se desactivan animaciones y transformaciones; la bandeja muestra el estado final." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "960px" },
+      { "name": "mobile", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Dark Pill Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Acción única de la página: enlace a WhatsApp en píldora negra.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Escríbeme por WhatsApp</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 26px; border-radius: 999px; background: #262626; color: #fff; font-weight: 500; font-size: 1rem; letter-spacing: -0.01em; line-height: 1.2; text-decoration: none; box-shadow: 0 10px 22px -12px rgba(0,0,0,0.55); transition: background-color 0.3s cubic-bezier(0.16,1,0.3,1), transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-btn:hover { background: #128c4a; transform: translateY(-2px); box-shadow: 0 16px 28px -14px rgba(18,140,74,0.6); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 2px solid #262626; outline-offset: 3px; }"
+    },
+    {
+      "name": "Floating Header",
+      "kind": "nav",
+      "refersTo": "topbar",
+      "description": "Barra en píldora blanca con logotipo y botón pequeño.",
+      "html": "<div class=\"ds-bar\"><a class=\"ds-logo\" href=\"#\">Carlos Coder</a><a class=\"ds-bar-btn\" href=\"#\">WhatsApp</a></div>",
+      "css": ".ds-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 8px 8px 24px; background: #fff; border-radius: 999px; box-shadow: 0 0 0 1px #e7e7e4, 0 6px 24px -10px rgba(0,0,0,0.12); } .ds-logo { font-weight: 600; letter-spacing: -0.03em; font-size: 1.05rem; color: #262626; text-decoration: none; } .ds-bar-btn { padding: 11px 20px; border-radius: 999px; background: #262626; color: #fff; font-size: 0.95rem; font-weight: 500; text-decoration: none; transition: background-color 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-bar-btn:hover { background: #128c4a; }"
+    },
+    {
+      "name": "Inbox Object",
+      "kind": "custom",
+      "refersTo": "inbox-object",
+      "description": "Objeto oscuro del hero con mensajes sin responder cuyo punto coral se enfría.",
+      "html": "<div class=\"ds-inbox\"><div class=\"ds-inbox-head\"><span>WhatsApp</span><span>3 sin responder</span></div><div class=\"ds-inbox-row\"><span class=\"ds-dot\"></span><span><small>Nuevo contacto</small><br>Hola, vi tu perfil. ¿Cuánto cuesta?</span><span class=\"ds-age\">hace 6 días</span></div></div>",
+      "css": ".ds-inbox { width: 480px; max-width: 100%; padding: 8px; border-radius: 28px; background: linear-gradient(180deg, #232326 0%, #1a1a1c 100%); color: #f1f1f0; box-shadow: 0 0 0 1px rgba(255,255,255,0.08) inset, 0 2px 0 rgba(255,255,255,0.06) inset, 0 30px 60px -22px rgba(0,0,0,0.5), 0 12px 22px -12px rgba(0,0,0,0.35); } .ds-inbox-head { display: flex; justify-content: space-between; padding: 12px 16px 10px; font-size: 0.82rem; font-weight: 500; color: #b9b9b6; } .ds-inbox-row { display: grid; grid-template-columns: 12px 1fr auto; align-items: center; gap: 14px; padding: 10px 16px; background: #2a2a2d; border-radius: 20px; font-size: 0.98rem; font-weight: 500; } .ds-inbox-row small { font-size: 0.78rem; color: #a5a5a2; font-weight: 400; } .ds-dot { width: 10px; height: 10px; border-radius: 50%; background: #5d5d5f; } .ds-age { font-size: 0.8rem; color: #b9b9b6; }"
+    },
+    {
+      "name": "Perforated Ticket",
+      "kind": "card",
+      "refersTo": "ticket",
+      "description": "Ficha blanca de la oferta con perforación discontinua entre la lista y el precio.",
+      "html": "<div class=\"ds-ticket\"><div class=\"ds-ticket-top\"><h3>Diagnóstico Cero Caos</h3></div><div class=\"ds-cut\"></div><div class=\"ds-ticket-bottom\"><span class=\"ds-price\">S/ 297</span></div></div>",
+      "css": ".ds-ticket { position: relative; max-width: 460px; background: #fff; border-radius: 28px; padding-bottom: 12px; box-shadow: 0 0 0 1px #e7e7e4, 0 40px 60px -32px rgba(0,0,0,0.28), 0 12px 22px -14px rgba(0,0,0,0.16); } .ds-ticket-top { padding: 36px 32px 28px; } .ds-ticket-top h3 { margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: -0.03em; color: #262626; } .ds-cut { position: relative; height: 0; margin: 0 22px; border-top: 2px dashed #d4d4d0; } .ds-cut::before, .ds-cut::after { content: ''; position: absolute; top: -15px; width: 28px; height: 28px; border-radius: 50%; background: #f7f7f5; } .ds-cut::before { left: -36px; } .ds-cut::after { right: -36px; } .ds-ticket-bottom { padding: 28px 32px 14px; } .ds-price { font-size: 3rem; font-weight: 400; letter-spacing: -0.05em; line-height: 1; color: #262626; }"
+    },
+    {
+      "name": "Two-Tone Headline",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Titular en tinta con segunda mitad en salvia y una palabra en serif itálica.",
+      "html": "<h2 class=\"ds-h\">Tu problema no es que te falten <em>seguidores.</em> <span>Es lo que pasa después.</span></h2>",
+      "css": ".ds-h { margin: 0; font-family: Geist, system-ui, sans-serif; font-weight: 400; font-size: clamp(2.3rem, 5.6vw, 4.6rem); line-height: 1.02; letter-spacing: -0.04em; color: #262626; text-wrap: balance; } .ds-h em { font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-weight: 400; font-size: 1.06em; letter-spacing: -0.01em; } .ds-h span { color: #6f8584; }"
+    },
+    {
+      "name": "FAQ Row",
+      "kind": "custom",
+      "refersTo": "note-panel",
+      "description": "Fila de pregunta separada por línea con botón circular más/menos.",
+      "html": "<details class=\"ds-faq\"><summary>¿Cómo se paga?<i></i></summary><p>Se coordina por WhatsApp.</p></details>",
+      "css": ".ds-faq { border-bottom: 1px solid #e7e7e4; } .ds-faq summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 0; cursor: pointer; list-style: none; font-size: 1.2rem; letter-spacing: -0.02em; color: #262626; } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary i { position: relative; flex: none; width: 32px; height: 32px; border-radius: 50%; background: #f7f7f5; box-shadow: 0 0 0 1px #e7e7e4; transition: background-color 0.3s cubic-bezier(0.16,1,0.3,1); } .ds-faq summary i::before, .ds-faq summary i::after { content: ''; position: absolute; left: 50%; top: 50%; width: 12px; height: 1.5px; background: #262626; transform: translate(-50%,-50%); } .ds-faq summary i::after { transform: translate(-50%,-50%) rotate(90deg); } .ds-faq summary:hover i { background: #ececea; } .ds-faq p { margin: 0; padding: 0 56px 26px 0; color: #565656; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El escritorio en orden",
+    "overview": "Una hoja blanca grande, con esquinas muy redondeadas, descansa sobre un fondo gris cálido. Dentro de ella el orden es el mensaje: tipografía grotesca enorme y ajustada, divisiones de una línea fina, mucho aire, y un solo objeto oscuro y táctil (la bandeja de WhatsApp) que concentra la atención. La página es en sí misma el \"cero caos\" que promete.\n\nLa densidad es baja y la voz es serena. Los titulares se parten en dos tonos (tinta y gris salvia) y llevan palabras sueltas en serif itálica como acento. Los objetos oscuros, la ficha perforada y la regla de días son los únicos elementos con volumen; todo lo demás es plano y se separa con líneas.",
+    "keyCharacteristics": [
+      "Hoja blanca única sobre fondo gris cálido, líneas de 1px como estructura.",
+      "Geist ligero y medio con tracking negativo; Bodoni Moda itálica solo en palabras de acento.",
+      "Botones píldora negros; el hover los vuelve verde WhatsApp.",
+      "Objetos oscuros con sombras suaves y reales; la ficha blanca perforada para la oferta.",
+      "Coral reservado a señales sin responder."
+    ],
+    "rules": [
+      { "name": "The Coral Means Unanswered Rule", "body": "El coral aparece solo donde algo está sin responder (el punto de cada mensaje y el contador de la bandeja). No es color de énfasis ni de botón.", "section": "colors" },
+      { "name": "The Two-Tone Headline Rule", "body": "Un titular largo se divide en tinta y salvia; la salvia nunca se usa en texto pequeño.", "section": "colors" },
+      { "name": "The One Word Rule", "body": "La serif itálica marca una palabra o una frase corta dentro de un titular de Geist; nunca un párrafo.", "section": "typography" },
+      { "name": "The Object Alone Rule", "body": "Solo los objetos (bandeja, reproductor, ficha, píldoras, botón) llevan sombra difusa y desplazada hacia abajo. Las secciones y filas se definen con líneas.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do mantener una sola hoja blanca sobre #f4f4f2 y separar secciones con líneas de 1px (#e7e7e4) o con el tinte #f7f7f5.",
+      "Do usar Geist con tracking negativo para display y Bodoni Moda itálica solo en palabras sueltas de acento.",
+      "Do dividir los titulares largos en tinta y salvia (#6f8584), y reservar la salvia para texto grande.",
+      "Do dar volumen solo a objetos oscuros y a la ficha, con sombras suaves y desplazadas hacia abajo.",
+      "Do usar el coral (#ff5b5b) únicamente para señales sin responder.",
+      "Do usar botones píldora negros con el icono de WhatsApp, que cambian a verde #128c4a en hover."
+    ],
+    "donts": [
+      "Don't usar degradados oscuros de página, cuentas regresivas ni pilas de bonos.",
+      "Don't repetir rejillas de tarjetas iguales; prefiere filas separadas por líneas.",
+      "Don't usar el coral como color de énfasis, de botón o de decoración.",
+      "Don't usar la salvia en texto pequeño.",
+      "Don't poner la serif itálica en párrafos completos."
+    ]
+  }
+}
