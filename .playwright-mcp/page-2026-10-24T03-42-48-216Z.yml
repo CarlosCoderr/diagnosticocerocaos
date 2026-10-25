@@ -1,0 +1,208 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e5]:
+      - heading "Te dejas la piel creando contenido, pero cuando miras tu cuenta a fin de mes... los números no tienen sentido." [level=1] [ref=e6]
+      - paragraph [ref=e7]: "Tu problema no son los seguidores ni el algoritmo: es vender en caos y sin un camino claro. Mira este video antes de gastar en anuncios."
+      - button "Reproducir el video" [ref=e9] [cursor=pointer]:
+        - generic [ref=e13]: Dale play
+      - button "Quiero ordenar mi sistema de ventas" [ref=e14]
+      - paragraph [ref=e16]: Sesión de diagnóstico 1 a 1 + Hoja de ruta por escrito. Sin compromisos de permanencia.
+    - generic [ref=e19]:
+      - heading "No necesitas más \"reels virales\". Necesitas dejar de perder los clientes que ya te escriben." [level=2] [ref=e20]
+      - paragraph [ref=e21]: "Lo sé porque lo veo cada semana: expertos brillantes al borde del colapso operativo."
+      - list [ref=e22]:
+        - listitem [ref=e23]: "WhatsApp lleno de chats fríos: decenas de personas que preguntaron precio, no volvieron a responder y quedaron en el olvido."
+        - listitem [ref=e24]: Si la gente entra a tu perfil y ve mil servicios distintos, no entiende qué vendes. Y audiencia confundida, no compra.
+        - listitem [ref=e25]: Invertiste en pauta o en un freelancer barato y solo conseguiste curiosos pidiendo precio. ¿Tu conclusión? “Los anuncios no me funcionan.”
+        - listitem [ref=e26]: Fin de semana perdido viendo tutoriales y arreglando automatizaciones rotas, en lugar de vender o descansar.
+      - paragraph [ref=e27]: No te falta talento ni ganas. Tu estancamiento de ingresos ocurre porque probaste parches sueltos en vez de construir la máquina completa.
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Hagamos la cuenta que nadie quiere hacer." [level=2] [ref=e32]
+        - paragraph [ref=e33]: "Suma mentalmente por un segundo:"
+      - list [ref=e34]:
+        - listitem [ref=e35]:
+          - generic [ref=e36]: 1. El presupuesto que quemaste en anuncios que solo trajeron curiosos.
+        - listitem [ref=e38]:
+          - generic [ref=e39]: 2. Lo que pagaste por esa página web bonita que hoy solo sirve de tarjeta de presentación digital.
+        - listitem [ref=e41]:
+          - generic [ref=e42]: 3. Las ventas de $300, $500 o $1,000 que se enfriaron en tu WhatsApp porque no tenías una secuencia de seguimiento.
+        - listitem [ref=e44]:
+          - generic [ref=e45]: 4. La ansiedad de cerrar un mes sin saber si el próximo vas a facturar.
+      - paragraph [ref=e48]: Seguir operando en el caos ya te está costando miles de dólares al mes. Mandar pauta a una casa desordenada solo hace que te quemes más rápido.
+    - generic [ref=e51]:
+      - heading "Primero se ordena la casa. Después se enciende el motor." [level=2] [ref=e52]
+      - paragraph [ref=e53]: "No te voy a vender una web para que se vea bonita ni te voy a prometer 100 leads al día. El Método Cero Caos es una arquitectura técnica en 4 pasos lógicos:"
+      - list [ref=e54]:
+        - listitem [ref=e55]:
+          - generic [ref=e56]: "1"
+          - heading "Diagnóstico y Oferta:" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Ordenamos tu oferta y definimos qué vendes y a quién, antes de invertir un solo dólar en anuncios.
+        - listitem [ref=e59]:
+          - generic [ref=e60]: "2"
+          - heading "Infraestructura Integrada:" [level=3] [ref=e61]
+          - paragraph [ref=e62]: Landing de conversión y captación automatizada a WhatsApp/correo para no perder ningún prospecto.
+        - listitem [ref=e63]:
+          - generic [ref=e64]: "3"
+          - heading "Capacitación e Independencia:" [level=3] [ref=e65]
+          - paragraph [ref=e66]: Entrenamos a tu equipo comercial en WhatsApp para que cierren ventas sin depender de mí a ciegas.
+        - listitem [ref=e67]:
+          - generic [ref=e68]: "4"
+          - heading "Motor de Tráfico:" [level=3] [ref=e69]
+          - paragraph [ref=e70]: El DÍA 15, con la casa en orden y el sistema listo, encendemos la pauta para escalar.
+      - generic [ref=e71]:
+        - generic [ref=e88]:
+          - generic [ref=e89]: Día
+          - generic [ref=e90]: "1"
+        - paragraph [ref=e91]:
+          - generic [ref=e92]: Diagnóstico, parte técnica y capacitación primero.
+          - strong [ref=e93]: La pauta se enciende el día 15.
+    - generic [ref=e96]:
+      - figure "Foto de Carlos" [ref=e97]
+      - generic [ref=e99]:
+        - heading "Hola, Soy Carlos" [level=2] [ref=e100]
+        - paragraph [ref=e101]: El arquitecto técnico que apaga el fuego en tu negocio.
+        - paragraph [ref=e102]: "En marzo de 2023 yo estaba en el mismo lugar frustrante: entregaba hasta 4 páginas web al mes, cobrando poco y pasando más de 10 horas diarias frente a la pantalla. Me veían como \"el chico de las webs\". Entendí que el mercado estaba lleno de diseñadores que hacen cosas bonitas y de \"marketeros\" que venden humo, pero nadie sabía unir la infraestructura técnica con la adquisición real de clientes. Me especialicé en arquitectura de sistemas, psicología de ventas y pauta publicitaria. Hoy, la landing, la automatización, el entrenamiento de atención y la pauta los diseño y los ejecuto yo mismo. No tienes que estar coordinando a tres proveedores distintos que se echan la culpa entre sí cuando algo no vende."
+    - generic [ref=e105]:
+      - heading "Tu primer paso no es contratar un sistema de miles de dólares. Es ver el diagnóstico real de tu negocio." [level=2] [ref=e106]
+      - paragraph [ref=e107]: SESIÓN ESTRATÉGICA 1 A 1 (60-90 MINUTOS) + DOCUMENTO DE RUTA ESCRITO
+      - paragraph [ref=e108]: "En esta sesión nos sentamos a analizar tu marca a fondo:"
+      - list [ref=e109]:
+        - listitem [ref=e110]: Desarmamos tu oferta actual para que se entienda al primer vistazo.
+        - listitem [ref=e111]: Identificamos exactamente por dónde estás perdiendo el dinero y los clientes.
+        - listitem [ref=e112]: Te entrego tu hoja de ruta por escrito con los pasos exactos que debes armar y qué herramientas NO debes tocar aún.
+      - paragraph [ref=e113]: No te falta talento ni ganas. Tu estancamiento de ingresos ocurre porque probaste parches sueltos en vez de construir la máquina completa.
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - heading [level=2] [ref=e119]:
+          - text: Lo que
+          - emphasis [ref=e120]: te llevas
+        - paragraph [ref=e121]: Una sesión conmigo de 60 a 90 minutos, y un documento escrito.
+        - heading "Lo que pasa con el pago" [level=3] [ref=e122]
+        - paragraph [ref=e123]: Si después del diagnóstico decides que armemos el sistema juntos y contratas dentro de los 7 días, lo que pagaste se descuenta del setup. Si prefieres ejecutarlo con otra persona, el documento es tuyo.
+        - heading "¿Por qué no es gratis?" [level=3] [ref=e124]
+        - paragraph [ref=e125]: Porque lo gratis atrae a quien solo pregunta el precio y se va. Quiero trabajar con quien va en serio.
+      - article "Diagnóstico Cero Caos" [ref=e126]:
+        - generic [ref=e127]:
+          - paragraph [ref=e128]: Diagnóstico Cero Caos
+          - list [ref=e129]:
+            - listitem [ref=e130]:
+              - strong [ref=e131]: Sesión conmigo (60–90 min)
+              - generic [ref=e132]: Revisamos tu marca, tu oferta y por dónde entra y se cae la gente.
+            - listitem [ref=e133]:
+              - strong [ref=e134]: Análisis de marca, avatar y dolores
+              - generic [ref=e135]: "Por escrito: a quién le vendes de verdad y qué le duele con sus propias palabras."
+            - listitem [ref=e136]:
+              - strong [ref=e137]: Tu oferta definida
+              - generic [ref=e138]: Tus programas separados de tus servicios, con nombre y precio de cada uno.
+            - listitem [ref=e139]:
+              - strong [ref=e140]: Ruta recomendada
+              - generic [ref=e141]: Qué armar primero, en qué orden y qué no tocar todavía.
+            - listitem [ref=e142]:
+              - strong [ref=e143]: Documento escrito
+              - generic [ref=e144]: Todo lo anterior en un archivo tuyo. Lo puedes ejecutar con quien quieras.
+        - generic [ref=e146]:
+          - generic [ref=e147]:
+            - generic [ref=e148]: Precio
+            - strong [ref=e149]: S/ 297
+          - link "Reservar mi diagnóstico por WhatsApp" [ref=e150] [cursor=pointer]:
+            - /url: https://wa.me/51921926452?text=Hola%20Carlos%2C%20vi%20tu%20video%20del%20Diagn%C3%B3stico%20Cero%20Caos.%20Soy%20%5Bmi%20nombre%5D%20y%20vendo%20%5Blo%20que%20vendo%5D.%20Quiero%20reservar%20mi%20sesi%C3%B3n.
+    - generic [ref=e157]:
+      - heading "Lo que pasó cuando lo apliqué completo" [level=2] [ref=e158]
+      - paragraph [ref=e159]: Una agencia de marketing que vende a centros estéticos.
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - heading "Cómo llegó" [level=3] [ref=e162]
+          - paragraph [ref=e163]: Tenían estructura de agencia, pero sus ventas eran un caos. Campañas sin un camino de compra claro.
+          - heading "Qué hicimos, en 3 pasos" [level=3] [ref=e164]
+          - list [ref=e165]:
+            - listitem [ref=e166]: Ordené su oferta y su proceso comercial.
+            - listitem [ref=e167]: Construí la landing y el camino de compra.
+            - listitem [ref=e168]: Activé y optimicé las campañas en Meta. Además, capacité a todo el equipo.
+        - generic [ref=e169]:
+          - 'figure "Captura real: panel de Meta" [ref=e170]'
+          - 'figure "Captura real: WhatsApp confirmando el cierre" [ref=e172]'
+          - figure "Video de la dueña" [ref=e174]
+      - paragraph [ref=e176]:
+        - generic [ref=e178]:
+          - emphasis [ref=e179]: S/ 300
+          - text: de pauta
+        - generic [ref=e183]:
+          - emphasis [ref=e184]: "11"
+          - text: mensajes
+        - generic [ref=e188]:
+          - emphasis [ref=e189]: "1"
+          - text: cliente calificado
+        - generic [ref=e193]:
+          - emphasis [ref=e194]: S/ 3,000
+          - text: pagados
+      - paragraph [ref=e195]: En la primera semana. La agencia lo fidelizó con retención mensual. Después del proyecto, me sumaron a su equipo.
+      - paragraph [ref=e196]:
+        - strong [ref=e197]: Es un solo caso.
+        - text: No te garantiza que a ti te vaya igual. Lo que muestra es que cuando hay oferta, camino de compra y alguien que responde bien, un presupuesto chico puede traer gente que paga lo que vale tu servicio.
+    - generic [ref=e200]:
+      - heading [level=2] [ref=e201]:
+        - text: Te lo digo
+        - emphasis [ref=e202]: desde ya
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - heading "Es para ti si" [level=3] [ref=e205]
+          - list [ref=e206]:
+            - listitem [ref=e207]:
+              - generic [ref=e210]: Tienes una marca personal con audiencia y vendes tus conocimientos (consultas, programas, servicios).
+            - listitem [ref=e211]:
+              - generic [ref=e214]: Tu facturación sube y baja y no sabes de qué depende.
+            - listitem [ref=e215]:
+              - generic [ref=e218]: Estás dispuesta a aparecer con tu cara y tu voz, y a cerrar las ventas que el sistema te traiga.
+            - listitem [ref=e219]:
+              - generic [ref=e222]: Quieres entender la lógica de lo que se arma, no solo recibir un archivo.
+        - generic [ref=e223]:
+          - heading "No es para ti si" [level=3] [ref=e224]
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - generic [ref=e229]: Quieres que el marketing lo haga todo sin que tú aparezcas. Tu cara y tu voz son lo que vende, y eso nadie lo hace por ti.
+            - listitem [ref=e230]:
+              - generic [ref=e233]: Solo quieres una web. Yo no vendo webs sueltas.
+            - listitem [ref=e234]:
+              - generic [ref=e237]: Buscas que te prometa cien leads al día o resultados en treinta días.
+    - generic [ref=e240]:
+      - heading "Lo que te digo con honestidad" [level=2] [ref=e241]
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - term [ref=e244]: Transparencia de tiempos
+          - definition [ref=e245]: El sistema se construye primero. Los anuncios se encienden el día 15 y desde ahí se miden los resultados. No hay “resultados mañana”.
+        - generic [ref=e246]:
+          - term [ref=e247]: Transparencia de presupuesto
+          - definition [ref=e248]: No prometo un número de ventas ni de leads. Prometo orden, un sistema armado y números claros para decidir.
+    - generic [ref=e251]:
+      - heading "Preguntas frecuentes" [level=2] [ref=e252]
+      - generic [ref=e253]:
+        - group [ref=e254]:
+          - generic "¿Está muy caro?" [ref=e255] [cursor=pointer]
+        - group [ref=e258]:
+          - generic "Ya probé anuncios y no funcionaron." [ref=e259] [cursor=pointer]
+        - group [ref=e262]:
+          - generic "No tengo tiempo para grabar contenido. Quiero que lo hagan todo por mí." [ref=e263] [cursor=pointer]
+        - group [ref=e266]:
+          - generic "¿No puedo aprenderlo yo con tutoriales de YouTube?" [ref=e267] [cursor=pointer]
+        - group [ref=e270]:
+          - generic "¿Quince días? Yo necesito vender ya." [ref=e271] [cursor=pointer]
+        - group [ref=e274]:
+          - generic "¿Y si después dependo de ti para todo?" [ref=e275] [cursor=pointer]
+        - group [ref=e278]:
+          - generic "¿Qué pasa si solo quiero una web?" [ref=e279] [cursor=pointer]
+        - group [ref=e282]:
+          - generic "¿Cómo pago y cuándo?" [ref=e283] [cursor=pointer]
+        - group [ref=e286]:
+          - generic "¿Esto garantiza resultados?" [ref=e287] [cursor=pointer]
+    - generic [ref=e292]:
+      - heading "La gente ya la tienes. Te falta el sistema." [level=2] [ref=e293]
+      - paragraph [ref=e294]: Escríbeme por WhatsApp con tu nombre y qué vendes hoy. Yo te respondo con los horarios disponibles y reservas tu sesión de diagnóstico. En la sesión ordenamos tu oferta y tu ruta. Después recibes el documento escrito, y tú decides qué sigue.
+      - link "Quiero mi Diagnóstico Cero Caos" [ref=e295] [cursor=pointer]:
+        - /url: https://wa.me/51921926452?text=Hola%20Carlos%2C%20vi%20tu%20video%20del%20Diagn%C3%B3stico%20Cero%20Caos.%20Soy%20%5Bmi%20nombre%5D%20y%20vendo%20%5Blo%20que%20vendo%5D.%20Quiero%20reservar%20mi%20sesi%C3%B3n.
+    - generic [ref=e300]:
+      - paragraph [ref=e301]: © Carlos Coder · Todos los derechos reservados
+      - paragraph [ref=e302]:
+        - strong [ref=e303]: "Aviso de resultados:"
+        - text: Los resultados mostrados corresponden a un caso real y no garantizan resultados futuros. Los resultados dependen del negocio, la oferta, la inversión en anuncios, la ejecución y el contenido de cada persona. Este sitio no es parte de Meta ni de Google. Facebook, Instagram y Google son marcas de sus respectivos dueños.
+  - alert [ref=e304]

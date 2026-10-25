@@ -1,0 +1,198 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: Para creadores, coaches y consultores
+      - heading "Dejas la piel creando contenido, pero cuando miras tu cuenta a fin de mes... los números no tienen sentido." [level=1] [ref=e6]
+      - paragraph [ref=e7]: Tu problema no es la falta de seguidores ni el algoritmo. Es que estás intentando vender en medio de un caos operativo sin un camino de compra claro. Mira este video antes de gastar en anuncios.
+      - button "Reproducir el video" [ref=e9] [cursor=pointer]:
+        - generic [ref=e13]: Dale play
+      - generic [ref=e14]:
+        - button "Quiero mi Diagnóstico Cero Caos" [ref=e15] [cursor=pointer]
+        - paragraph [ref=e16]: $79 USD · Sesión 1 a 1 de 60 min · Garantía de reembolso del 100%
+    - generic [ref=e18]:
+      - heading "No necesitas más “reels virales”. Necesitas dejar de perder los clientes que ya te escriben." [level=2] [ref=e19]
+      - paragraph [ref=e20]: "Sé exactamente lo que se siente lo veo en muchos expertos que están al borde del colapso operativo:"
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - strong [ref=e23]: "El domingo en la noche:"
+          - text: abres WhatsApp y encuentras cinco chats fríos. Preguntan “¿cuánto cuesta?” y desaparecen. No sabes si fue tu precio, tu respuesta o que nunca iban a comprar.
+        - listitem [ref=e24]:
+          - strong [ref=e25]: "Tu perfil es un menú sin plato fuerte:"
+          - text: una mentoría, un curso, una asesoría y un taller. Quien llega no sabe qué elegir, así que no elige nada.
+        - listitem [ref=e26]:
+          - strong [ref=e27]: Pusiste dinero en anuncios
+          - text: y te llegaron likes, curiosos y gente que “solo quería ver”. Ventas, pocas o ninguna.
+        - listitem [ref=e28]:
+          - strong [ref=e29]: Un mes bueno te hace creer que ya lo lograste.
+          - text: Al siguiente vuelves a empezar de cero.
+        - listitem [ref=e30]:
+          - strong [ref=e31]: "Haces todo tú:"
+          - text: contestas, agendas, cobras y persigues. Cada venta depende de que tengas energía ese día.
+      - paragraph [ref=e32]: No es porque te falte talento o ganas. Es porque cada solución que probaste arreglaba una pieza suelta, pero nadie se sentó a construir la máquina completa.
+    - generic [ref=e34]:
+      - heading "Lo que el caos te cuesta cada mes (haz la cuenta)" [level=2] [ref=e35]
+      - paragraph [ref=e36]: "No se trata de trabajar más duro. Se trata de ver dónde se está evaporando tu dinero:"
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - term [ref=e39]: ➔ Tráfico sin filtro
+          - definition [ref=e40]: $150 a $300 quemados en anuncios o “promocionar” publicaciones sin retorno.
+        - generic [ref=e41]:
+          - term [ref=e42]: ➔ Prospectos enfriados
+          - definition [ref=e43]: Decenas de chats en visto que nunca llegaron a una llamada de ventas.
+        - generic [ref=e44]:
+          - term [ref=e45]: ➔ Ingresos a medias
+          - definition [ref=e46]: Meses de 0 o de sube y baja que te obligan a empezar de cero cada 30 días.
+        - generic [ref=e47]:
+          - term [ref=e48]: ➔ Tiempo perdido
+          - definition [ref=e49]: 8 a 10 horas semanales respondiendo a curiosos en lugar de atender a clientes que sí pagan.
+      - paragraph [ref=e50]: Invertir en publicidad sin un sistema detrás es tirar más de $1,000 en seis meses atrayendo curiosos que no compran. A ese desperdicio económico se suma el desgaste de perseguir interesados y la incertidumbre financiera. El caos es el impuesto más alto que paga una marca personal, y se repite cada mes hasta que se pone orden.
+      - paragraph [ref=e51]: Cada mes sin sistema es dinero quemado en tráfico que no convierte.
+    - generic [ref=e53]:
+      - heading "Primer se ordena la casa. Después se enciende el motor." [level=2] [ref=e54]
+      - paragraph [ref=e55]: "La mayoría empieza por el paso 4 (poner anuncios) y por eso falla. Aquí el orden es estricto:"
+      - list [ref=e56]:
+        - listitem [ref=e57]:
+          - generic [ref=e58]: "1"
+          - 'heading "OFERTA: Una sola promesa clara." [level=3] [ref=e59]':
+            - text: "OFERTA:"
+            - generic [ref=e60]: Una sola promesa clara.
+          - paragraph [ref=e61]: Dejamos una oferta principal, con precio, resultado y a quién va dirigida. Ya no tienes seis cosas en el perfil. Tienes una que se entiende en 5 segundos.
+        - listitem [ref=e62]:
+          - generic [ref=e63]: "2"
+          - 'heading "INFRAESTRUCTURA: El camino que filtra por ti." [level=3] [ref=e64]':
+            - text: "INFRAESTRUCTURA:"
+            - generic [ref=e65]: El camino que filtra por ti.
+          - paragraph [ref=e66]: "Se arma el recorrido completo: anuncio → formulario de filtro → agenda → pago. Quien llega ya sabe qué vendes y cuánto cuesta. Los curiosos se descartan solos."
+        - listitem [ref=e67]:
+          - generic [ref=e68]: "3"
+          - 'heading "CAPACITACIÓN DE WHATSAPP: Cómo responder y cerrar." [level=3] [ref=e69]':
+            - text: "CAPACITACIÓN DE WHATSAPP:"
+            - generic [ref=e70]: Cómo responder y cerrar.
+          - paragraph [ref=e71]: Los mensajes que sí llegan se atienden con guiones y criterios claros. Sabes qué responder, cuándo dar seguimiento y cuándo soltar.
+        - listitem [ref=e72]:
+          - generic [ref=e73]: "4"
+          - 'heading "PAUTA DESDE EL DÍA 15: Recién ahí se activa." [level=3] [ref=e74]':
+            - text: "PAUTA DESDE EL DÍA 15:"
+            - generic [ref=e75]: Recién ahí se activa.
+          - paragraph [ref=e76]: La publicidad entra cuando los tres pasos anteriores están listos. Si empiezas a pautar antes, pagas por tráfico que cae en un sistema roto.
+      - paragraph [ref=e77]: Este orden evita que tu inversión en anuncios se pierda.
+    - generic [ref=e79]:
+      - heading "Qué incluye el Diagnóstico Cero Caos" [level=2] [ref=e80]
+      - generic [ref=e81]:
+        - paragraph [ref=e82]: "$79 USD (Perú: S/ 297)"
+        - list [ref=e83]:
+          - listitem [ref=e84]:
+            - generic [ref=e87]:
+              - strong [ref=e88]: Sesión estratégica 1 a 1 de 60 minutos por Google Meet,
+              - text: solo sobre tu negocio, no una clase grupal.
+          - listitem [ref=e89]:
+            - generic [ref=e92]:
+              - strong [ref=e93]: Auditoría de fugas.
+              - text: Revisamos tu perfil, tu oferta, tu forma de atender y tu pauta (si ya inviertes). Salimos con la lista de dónde se te escapa el dinero.
+          - listitem [ref=e94]:
+            - generic [ref=e97]:
+              - strong [ref=e98]: Tu oferta reestructurada.
+              - text: "Queda definida: qué vendes, a quién, a qué precio y con qué promesa."
+          - listitem [ref=e99]:
+            - generic [ref=e102]:
+              - strong [ref=e103]: Hoja de ruta técnica a 15 días.
+              - text: Paso a paso, con orden de prioridades, para que sepas qué hacer cada semana.
+          - listitem [ref=e104]:
+            - generic [ref=e107]:
+              - strong [ref=e108]: Manual Cero Caos del Cliente (documento escrito y personalizado).
+              - text: Todo lo anterior queda por escrito, para que lo ejecutes tú, tu equipo o quien elijas.
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - heading "Garantía de riesgo cero" [level=3] [ref=e111]
+          - paragraph [ref=e112]: Si al terminar los 60 minutos no sales con tus fugas identificadas y tu ruta escrita, te devuelvo el 100% de tu dinero. Sin preguntas ni trámites.
+        - generic [ref=e113]:
+          - heading "¿Quieres que lo construyamos por ti?" [level=3] [ref=e114]
+          - paragraph [ref=e115]: Si contratas el Setup completo dentro de los 7 días posteriores al diagnóstico, los $79 USD se descuentan íntegros de la tarifa del setup. El diagnóstico se paga solo.
+      - generic [ref=e116]:
+        - button "Quiero mi Diagnóstico Cero Caos" [ref=e117] [cursor=pointer]
+        - paragraph [ref=e118]: $79 USD · Sesión 1 a 1 de 60 min · Garantía de reembolso del 100%
+    - generic [ref=e120]:
+      - heading "Escúchalo de quienes ya pasaron por el diagnóstico" [level=2] [ref=e121]
+      - paragraph [ref=e122]: Sin guion y sin edición. Esto es lo que dicen después de la sesión.
+      - generic [ref=e123]:
+        - figure "Salí de la sesión sabiendo exactamente qué quitar de mi perfil y qué vender primero. — Cliente 1, Coach de Hábitos" [ref=e124]:
+          - 'button "Reproducir: Testimonio: Cliente 1, Coach de Hábitos" [ref=e126] [cursor=pointer]'
+          - generic [ref=e130]:
+            - generic [ref=e131]: Salí de la sesión sabiendo exactamente qué quitar de mi perfil y qué vender primero.
+            - generic [ref=e132]: — Cliente 1, Coach de Hábitos
+        - figure "Por primera vez entendí por qué mis anuncios anteriores solo traían curiosos. — Cliente 2, Consultor" [ref=e133]:
+          - 'button "Reproducir: Testimonio: Cliente 2, Consultor" [ref=e135] [cursor=pointer]'
+          - generic [ref=e139]:
+            - generic [ref=e140]: Por primera vez entendí por qué mis anuncios anteriores solo traían curiosos.
+            - generic [ref=e141]: — Cliente 2, Consultor
+        - generic [ref=e142]:
+          - heading "Tú puedes ser el próximo caso de éxito." [level=3] [ref=e143]
+          - button "Reservar mi Diagnóstico" [ref=e144] [cursor=pointer]
+    - generic [ref=e146]:
+      - figure [ref=e147]:
+        - img "Carlos Coder" [ref=e148]
+      - generic [ref=e149]:
+        - heading "Quién está detrás del diagnóstico" [level=2] [ref=e150]
+        - paragraph [ref=e151]: En marzo de 2023 yo era un programador frustrado. Sabía construir cosas, pero no sabía hacer que alguien las comprara. Tenía el producto, el código y las horas, pero no tenía ventas.
+        - paragraph [ref=e152]: "Ahí entendí algo que hoy aplico con mis clientes: las ventas no se improvisan, se arquitectan. Me metí de lleno en los embudos, en la atención por WhatsApp y en la publicidad pagada, probando con dinero propio y de clientes."
+        - paragraph [ref=e153]: Hoy diseño sistemas de ventas para creadores, coaches y consultores la oferta, el camino de conversión y la pauta, todo conectado.
+        - paragraph [ref=e154]: No te voy a vender magia. Te voy a mostrar con claridad qué está roto y cómo arreglarlo, en orden.
+        - paragraph [ref=e155]: Carlos Coder, arquitecto de sistemas de ventas y pauta.
+    - generic [ref=e157]:
+      - heading "Esto es para ti… o no lo es" [level=2] [ref=e158]
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - heading "Es para ti si:" [level=3] [ref=e161]
+          - list [ref=e162]:
+            - listitem [ref=e163]:
+              - generic [ref=e166]: Tienes audiencia (más o menos de 5k a 200k seguidores) y ya vendiste algo antes.
+            - listitem [ref=e167]:
+              - generic [ref=e170]: Tu facturación sube y baja, y quieres previsibilidad.
+            - listitem [ref=e171]:
+              - generic [ref=e174]: Estás dispuesta a ajustar tu oferta y a ejecutar la hoja de ruta.
+            - listitem [ref=e175]:
+              - generic [ref=e178]: Quieres un sistema, no una solución rápida.
+            - listitem [ref=e179]:
+              - generic [ref=e182]: Estás pensando en pauta, o ya inviertes y no ves retorno.
+        - generic [ref=e183]:
+          - heading "No es para ti si:" [level=3] [ref=e184]
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - generic [ref=e189]: Buscas resultados sin aparecer, sin responder mensajes ni tomar decisiones.
+            - listitem [ref=e190]:
+              - generic [ref=e193]: Esperas un milagro de ventas sin cambiar nada de tu oferta.
+            - listitem [ref=e194]:
+              - generic [ref=e197]: Quieres una página web barata y nada más. Esto no es diseño web.
+            - listitem [ref=e198]:
+              - generic [ref=e201]: No tienes ningún producto o servicio definido que vender.
+            - listitem [ref=e202]:
+              - generic [ref=e205]: Quieres garantía de ventas. Garantizo claridad y un plan, no tus ingresos.
+      - paragraph [ref=e206]: Mejor saberlo ahora que descubrirlo después de pagar. Si te reconoces en la segunda lista, te agradezco que no reserves.
+    - generic [ref=e208]:
+      - heading "Preguntas frecuentes" [level=2] [ref=e209]
+      - generic [ref=e210]:
+        - group [ref=e211]:
+          - generic "¿$79 no es mucho para una sesión?" [ref=e212] [cursor=pointer]
+        - group [ref=e215]:
+          - generic "¿Los anuncios sí funcionan en mi nicho?" [ref=e216] [cursor=pointer]
+        - group [ref=e219]:
+          - generic "¿Por qué no aprendo todo esto en YouTube?" [ref=e220] [cursor=pointer]
+        - group [ref=e223]:
+          - generic "Ya tengo una página web. ¿Con eso basta?" [ref=e224] [cursor=pointer]
+        - group [ref=e227]:
+          - generic "¿Cómo pago?" [ref=e228] [cursor=pointer]
+        - group [ref=e231]:
+          - generic "¿Me garantizas resultados de ventas?" [ref=e232] [cursor=pointer]
+    - generic [ref=e236]:
+      - heading "Tienes la audiencia. Solo te falta el sistema." [level=2] [ref=e237]
+      - paragraph [ref=e238]: Deja de quemar presupuesto y depender de la suerte. En 60 minutos detectamos tus fugas, estructuramos tu oferta y trazamos tu ruta por escrito. Garantía de devolución total.
+      - generic [ref=e239]:
+        - button "Quiero mi Diagnóstico Cero Caos" [ref=e240] [cursor=pointer]
+        - paragraph [ref=e241]: $79 USD · Sesión 1 a 1 de 60 min · Garantía de reembolso del 100%
+    - generic [ref=e243]:
+      - paragraph [ref=e244]:
+        - strong [ref=e245]: "Descargo de resultados:"
+        - text: Los resultados de casos reales; no son típicos ni garantizan ingresos. El Diagnóstico Cero Caos entrega claridad y estrategia; el éxito depende de tu ejecución.
+      - paragraph [ref=e246]: Este sitio no es parte del sitio web de Facebook, Meta Platforms, Inc. ni de Google LLC. Este sitio no está respaldado por Facebook ni Google de ninguna manera.
+      - paragraph [ref=e247]: © 2026 Carlos Coder. Todos los derechos reservados.
+  - alert [ref=e248]

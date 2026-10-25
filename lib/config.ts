@@ -1,24 +1,19 @@
 // Datos que el dueño debe completar antes de publicar. Todo lo demás vive en app/page.tsx.
 
 export const SITE = {
-  // Formato internacional sin "+" ni espacios, p. ej. "51987654321".
-  // Perú (+51).
-  whatsappNumber: "51921926452",
-  // Texto precargado en el chat (copy del documento de la página de venta).
-  whatsappMessage:
-    "Hola Carlos, vi tu video del Diagnóstico Cero Caos. Soy [mi nombre] y vendo [lo que vendo]. Quiero reservar mi sesión.",
-  // PENDIENTE: [PRECIO FINAL]. S/ 297 según el documento de bloques.
-  price: "S/ 297",
-  // PENDIENTE: [CÓMO SE COBRA] (Yape / transferencia / enlace de pago). Reemplazar este texto.
-  paymentMethod: "[CÓMO SE COBRA: Yape / transferencia / enlace de pago]",
-  // PENDIENTE: URL del video VSL (mp4). Vacío muestra el reproductor en espera.
-  vslSrc: "",
-  vslPoster: "",
-  // PENDIENTE: [URL TÉRMINOS] y [URL PRIVACIDAD]. Meta rechaza landings sin ellos.
+  // PENDIENTE: link de tu evento de Calendly con el cobro de $79 USD (Stripe/PayPal) activado.
+  // Quien califica en el formulario llega aquí con nombre y respuestas ya cargados.
+  // En Calendly crea 4 preguntas personalizadas, en este orden, para recibir las respuestas:
+  // 1) enlace a tu red o web, 2) qué vendes, 3) facturación mensual, 4) obstáculo principal.
+  calendlyUrl: "",
+  // ID del video de YouTube del VSL (lo que va después de "v=" en la URL).
+  vslYoutubeId: "dMZ-n2KSlxE",
+  // PENDIENTE: URLs legales. Meta rechaza landings sin términos y privacidad.
   termsUrl: "#",
   privacyUrl: "#",
+  refundUrl: "#",
+  contactUrl: "#",
 };
 
-export const whatsappHref = `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(
-  SITE.whatsappMessage,
-)}`;
+export const CTA_TEXT = "Quiero mi Diagnóstico Cero Caos";
+export const OPEN_FORM_EVENT = "open-qualifier-form";

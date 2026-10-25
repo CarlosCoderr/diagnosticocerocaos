@@ -1,47 +1,37 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { SITE } from "@/lib/config";
 import { PlayIcon } from "./Icons";
 
 export function VslPlayer() {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
-  const hasVideo = SITE.vslSrc !== "";
-
-  const start = () => {
-    if (!hasVideo) return;
-    setPlaying(true);
-    videoRef.current?.play();
-  };
+  const id = SITE.vslYoutubeId;
 
   return (
     <div className="player">
-      {hasVideo && (
-        <video
-          ref={videoRef}
+      {playing ? (
+        <iframe
           className="player-video"
-          src={SITE.vslSrc}
-          poster={SITE.vslPoster || undefined}
-          controls={playing}
-          playsInline
-          preload="metadata"
+          src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&playsinline=1`}
+          title="Video Diagnóstico Cero Caos"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowFullScreen
         />
-      )}
-      {!playing && (
+      ) : (
         <button
           type="button"
           className="player-cover"
-          onClick={start}
-          disabled={!hasVideo}
-          aria-label={hasVideo ? "Reproducir el video de 10 minutos" : "Video pendiente de cargar"}
+          onClick={() => setPlaying(true)}
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(https://img.youtube.com/vi/${id}/maxresdefault.jpg)`,
+          }}
+          aria-label="Reproducir el video"
         >
           <span className="player-play">
             <PlayIcon />
           </span>
-          <span className="player-meta">
-            {hasVideo ? "10 minutos" : "El video se carga aquí"}
-          </span>
+          <span className="player-meta">Dale play</span>
         </button>
       )}
     </div>

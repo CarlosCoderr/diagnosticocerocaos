@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "A Anuncios" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: A
+        - text: Anuncios
+      - generic [ref=e6]:
+        - link "Ingresar" [ref=e7] [cursor=pointer]:
+          - /url: /auth/login
+        - link "Publicar anuncio" [ref=e8] [cursor=pointer]:
+          - /url: /auth/register
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - heading "Encuentra perfiles por ciudad y distrito" [level=1] [ref=e12]
+        - paragraph [ref=e13]: Contacto directo por WhatsApp o Telegram, sin intermediarios.
+        - navigation "Ciudades" [ref=e14]:
+          - link "Lima" [ref=e15] [cursor=pointer]:
+            - /url: /lima
+      - generic [ref=e16]:
+        - link [ref=e17] [cursor=pointer]:
+          - /url: /lima/miraflores/full12240x
+          - generic [ref=e18]:
+            - generic [ref=e19]: Destacada
+            - generic [ref=e24]:
+              - heading "Full12240x, 30" [level=3] [ref=e25]:
+                - text: Full12240x
+                - generic [ref=e26]: ", 30"
+              - paragraph [ref=e27]: Miraflores
+          - paragraph [ref=e31]: Titulo
+        - link [ref=e32] [cursor=pointer]:
+          - /url: /lima/miraflores/yb1052
+          - generic [ref=e33]:
+            - generic [ref=e34]: Destacada
+            - generic [ref=e39]:
+              - heading "Yb1052" [level=3] [ref=e40]
+              - paragraph [ref=e41]: Miraflores
+          - paragraph [ref=e45]: h
+        - link [ref=e46] [cursor=pointer]:
+          - /url: /lima/miraflores/xa1954
+          - generic [ref=e47]:
+            - generic [ref=e48]: Destacada
+            - generic [ref=e53]:
+              - heading "Xa1954" [level=3] [ref=e54]
+              - paragraph [ref=e55]: Miraflores
+          - paragraph [ref=e59]: h
+        - link [ref=e60] [cursor=pointer]:
+          - /url: /lima/miraflores/luna
+          - generic [ref=e61]:
+            - generic [ref=e62]: Disponible
+            - generic [ref=e64]:
+              - heading "Luna" [level=3] [ref=e65]
+              - paragraph [ref=e66]: Miraflores
+          - paragraph [ref=e70]: h
+        - link [ref=e71] [cursor=pointer]:
+          - /url: /lima/surco/valeria-ui
+          - generic [ref=e72]:
+            - img "Foto de Valeria UI" [ref=e73]
+            - generic [ref=e74]:
+              - heading "Valeria UI, 27" [level=3] [ref=e75]:
+                - text: Valeria UI
+                - generic [ref=e76]: ", 27"
+              - paragraph [ref=e77]: Surco
+          - paragraph [ref=e81]: Titulo editado
+        - link [ref=e82] [cursor=pointer]:
+          - /url: /lima/miraflores/zc25481
+          - generic [ref=e84]:
+            - heading "Zc25481" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Miraflores
+          - paragraph [ref=e90]: h
+        - link [ref=e91] [cursor=pointer]:
+          - /url: /lima/surco/med21176
+          - generic [ref=e92]:
+            - img "Foto de Med21176" [ref=e93]
+            - generic [ref=e94]:
+              - heading "Med21176" [level=3] [ref=e95]
+              - paragraph [ref=e96]: Surco
+          - paragraph [ref=e100]: h
