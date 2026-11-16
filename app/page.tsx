@@ -1,412 +1,590 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import { CtaButton } from "@/components/CtaButton";
-import { QualifierModal } from "@/components/QualifierModal";
-import { ShortPlayer } from "@/components/ShortPlayer";
 import { VslPlayer } from "@/components/VslPlayer";
-import { CheckIcon, CrossIcon } from "@/components/Icons";
+import { CheckIcon, CrossIcon, PlayIcon } from "@/components/Icons";
+import "./landing.css";
+
+export const metadata: Metadata = {
+  title: "Diagnóstico Cero Caos · Carlos Coder",
+  description:
+    "Ordena tu oferta, arma el camino por donde te compran y enciende la pauta el día 15. Empieza con el Diagnóstico Cero Caos de S/ 297.",
+};
+
+// PENDIENTE: reemplazar por tu número de WhatsApp con código de país, sin + ni espacios (ej. 51999999999).
+const WA_NUMBER = "TU_NUMERO";
+const WA_URL = `https://wa.me/${WA_NUMBER}?text=CERO`;
+const CTA = "Quiero mi Diagnóstico Cero Caos";
 
 const MIRROR = [
-  {
-    lead: "El domingo en la noche:",
-    text: "abres WhatsApp y encuentras cinco chats fríos. Preguntan “¿cuánto cuesta?” y desaparecen. No sabes si fue tu precio, tu respuesta o que nunca iban a comprar.",
-  },
-  {
-    lead: "Tu perfil es un menú sin plato fuerte:",
-    text: "una mentoría, un curso, una asesoría y un taller. Quien llega no sabe qué elegir, así que no elige nada.",
-  },
-  {
-    lead: "Pusiste dinero en anuncios",
-    text: "y te llegaron likes, curiosos y gente que “solo quería ver”. Ventas, pocas o ninguna.",
-  },
-  {
-    lead: "Un mes bueno te hace creer que ya lo lograste.",
-    text: "Al siguiente vuelves a empezar de cero.",
-  },
-  {
-    lead: "Haces todo tú:",
-    text: "contestas, agendas, cobras y persigues. Cada venta depende de que tengas energía ese día.",
-  },
+  "Es domingo por la noche. Abres tu WhatsApp y los chats de la semana pasada siguen ahí, sin respuesta. Alguien preguntó el precio, nadie le contestó a tiempo, y ya no volvió.",
+  "Un mes te va increíble. El siguiente casi no entra nada. Y no sabes de qué dependió ninguno de los dos.",
+  "Le diste a “Promocionar” o contrataste a alguien barato para los anuncios. Te llegaron mensajes de curiosos que preguntaban precio y desaparecían. Y concluiste: “eso de los anuncios es botar plata.”",
+  "Tu web es bonita. Pero no te vende nada.",
+  "Alguien entra a tu perfil y te pregunta: “¿y tú qué vendes exactamente?” Y la respuesta honesta es: consultas sueltas, un programa, una guía… todo a la vez.",
+  "Tu fin de semana se va viendo tutoriales de YouTube para entender un dominio, una pasarela de pago o una integración. Y no te queda tiempo para crear contenido.",
 ];
 
-const COST = [
-  { label: "Tráfico sin filtro", value: "$150 a $300 quemados en anuncios o “promocionar” publicaciones sin retorno." },
-  { label: "Prospectos enfriados", value: "Decenas de chats en visto que nunca llegaron a una llamada de ventas." },
-  { label: "Ingresos a medias", value: "Meses de 0 o de sube y baja que te obligan a empezar de cero cada 30 días." },
-  { label: "Tiempo perdido", value: "8 a 10 horas semanales respondiendo a curiosos en lugar de atender a clientes que sí pagan." },
+const FAILS = [
+  { lead: "Cada una arregla una sola pieza.", text: "La web, los anuncios o el contenido. Ninguna ordena el negocio completo." },
+  { lead: "Mandan tráfico a una oferta mezclada.", text: "Si quien llega no entiende qué comprar, se va." },
+  { lead: "Nadie prepara qué pasa después del primer mensaje.", text: "Los chats se acumulan, respondes tarde o improvisas, y el prospecto se enfría." },
 ];
 
 const STEPS = [
   {
-    title: "OFERTA",
-    sub: "Una sola promesa clara.",
-    text: "Dejamos una oferta principal, con precio, resultado y a quién va dirigida. Ya no tienes seis cosas en el perfil. Tienes una que se entiende en 5 segundos.",
+    title: "Diagnóstico y Claridad de Oferta",
+    text: "Separamos tus programas de tus servicios y definimos a quién le vendes. Antes de gastar un sol en anuncios.",
   },
   {
-    title: "INFRAESTRUCTURA",
-    sub: "El camino que filtra por ti.",
-    text: "Se arma el recorrido completo: anuncio → formulario de filtro → agenda → pago. Quien llega ya sabe qué vendes y cuánto cuesta. Los curiosos se descartan solos.",
+    title: "Infraestructura Técnica Integrada",
+    text: "Tu landing page de conversión, tu captación automática por WhatsApp y correo, y el mensaje y contenido principal que no puede faltar.",
   },
   {
-    title: "CAPACITACIÓN DE WHATSAPP",
-    sub: "Cómo responder y cerrar.",
-    text: "Los mensajes que sí llegan se atienden con guiones y criterios claros. Sabes qué responder, cuándo dar seguimiento y cuándo soltar.",
+    title: "Capacitación e Independencia",
+    text: "Te enseño (a ti o a quien atiende tu WhatsApp) qué responder, cuándo y cómo. Para no “matar” una conversación que el sistema ya calentó. Aquí es donde la mayoría pierde las ventas.",
   },
   {
-    title: "PAUTA DESDE EL DÍA 15",
-    sub: "Recién ahí se activa.",
-    text: "La publicidad entra cuando los tres pasos anteriores están listos. Si empiezas a pautar antes, pagas por tráfico que cae en un sistema roto.",
+    title: "Motor de Tráfico y Control Operativo",
+    text: "Recién el día 15 enciendo tu pauta en Meta o Google, sobre una base que ya puede convertir. Yo la opero cada mes.",
   },
 ];
 
-const DELIVERABLES = [
-  {
-    lead: "Sesión estratégica 1 a 1 de 60 minutos por Google Meet,",
-    text: "solo sobre tu negocio, no una clase grupal.",
-  },
-  {
-    lead: "Auditoría de fugas.",
-    text: "Revisamos tu perfil, tu oferta, tu forma de atender y tu pauta (si ya inviertes). Salimos con la lista de dónde se te escapa el dinero.",
-  },
-  {
-    lead: "Tu oferta reestructurada.",
-    text: "Queda definida: qué vendes, a quién, a qué precio y con qué promesa.",
-  },
-  {
-    lead: "Hoja de ruta técnica a 15 días.",
-    text: "Paso a paso, con orden de prioridades, para que sepas qué hacer cada semana.",
-  },
-  {
-    lead: "Manual Cero Caos del Cliente (documento escrito y personalizado).",
-    text: "Todo lo anterior queda por escrito, para que lo ejecutes tú, tu equipo o quien elijas.",
-  },
+const RECEIVE = [
+  { what: "Sesión estratégica 1 a 1", how: "60–90 minutos conmigo, en vivo" },
+  { what: "Auditoría de tu situación actual", how: "Tu oferta, tu perfil y las fugas de tu WhatsApp" },
+  { what: "Manual Cero Caos", how: "Un documento escrito, personalizado, con la ruta exacta de qué hacer y en qué orden" },
 ];
 
-const TESTIMONIALS = [
-  {
-    quote: "Salí de la sesión sabiendo exactamente qué quitar de mi perfil y qué vender primero.",
-    who: "Cliente 1, Coach de Hábitos",
-    video: "S2-DAZrmW4k",
-  },
-  {
-    quote: "Por primera vez entendí por qué mis anuncios anteriores solo traían curiosos.",
-    who: "Cliente 2, Consultor",
-    video: "19ZBLm1rwbI",
-  },
+const CASE_STEPS = [
+  "Ordené su oferta y su camino de compra.",
+  "Construí su landing y su captación.",
+  "Capacité a todo su equipo para responder.",
+  "Activé su pauta en Meta Ads.",
 ];
 
 const FOR_YOU = [
-  "Tienes audiencia (más o menos de 5k a 200k seguidores) y ya vendiste algo antes.",
-  "Tu facturación sube y baja, y quieres previsibilidad.",
-  "Estás dispuesta a ajustar tu oferta y a ejecutar la hoja de ruta.",
-  "Quieres un sistema, no una solución rápida.",
-  "Estás pensando en pauta, o ya inviertes y no ves retorno.",
+  "Tienes una audiencia y vendes un programa o servicio propio.",
+  "Vendes “de casualidad”: un mes entra bien y el siguiente nada.",
+  "Ya probaste una web, el botón “Promocionar” o un freelancer de anuncios.",
+  "Estás dispuesta/o a aparecer con tu cara y tu voz y a cerrar las ventas que llegan. Esas dos tareas son tuyas: crear contenido y cerrar ventas.",
+  "Puedes invertir al menos S/ 600 al mes en anuncios.",
 ];
 
 const NOT_FOR_YOU = [
-  "Buscas resultados sin aparecer, sin responder mensajes ni tomar decisiones.",
-  "Esperas un milagro de ventas sin cambiar nada de tu oferta.",
-  "Quieres una página web barata y nada más. Esto no es diseño web.",
-  "No tienes ningún producto o servicio definido que vender.",
-  "Quieres garantía de ventas. Garantizo claridad y un plan, no tus ingresos.",
+  "Quieres “solo la web”. (Si es así, no soy tu proveedor y te lo digo con respeto.)",
+  "Quieres que el marketing lo haga todo sin que aparezcas.",
+  "Buscas “100 prospectos al día” o resultados en 30 días.",
+  "Todavía no tienes nada definido que vender, o no puedes invertir en pauta.",
+];
+
+const RISK = [
+  {
+    title: "Garantía del Diagnóstico",
+    text: "Si no recibes tu Manual Cero Caos, te devuelvo lo que pagaste.",
+    guarantee: true,
+  },
+  {
+    title: "Tus S/ 297 no se pierden",
+    text: "Si decides avanzar dentro de los 7 días, se descuentan completos de tu primer pago.",
+  },
+  {
+    title: "Salida limpia",
+    text: "Si algún día terminas tu plan, te llevas el archivo de tu landing, tu base de datos exportada en Excel (te la entrego en menos de 24 horas) y tu dominio si compraste uno propio. Nada queda de rehén.",
+  },
+  {
+    title: "Sin promesas infladas",
+    text: "No te prometo un número de ventas ni de prospectos. Te prometo que lo construyo bien y que lo opero.",
+  },
 ];
 
 const FAQ = [
   {
-    q: "¿$79 no es mucho para una sesión?",
-    a: "Piensa en lo que te cuesta cada mes el desorden: anuncios que no convierten, chats que no cierran y horas perdidas. Además, tienes garantía de reembolso del 100%, y si luego contratas el setup, los $79 se descuentan.",
+    q: "“Está muy caro.”",
+    a: "Compáralo contra lo que hoy pierdes, no contra lo que costaría una web: anuncios quemados, chats sin responder y meses en cero. Por eso el primer paso son S/ 297, no el sistema completo, y se descuentan si avanzas.",
   },
   {
-    q: "¿Los anuncios sí funcionan en mi nicho?",
-    a: "Depende de tu oferta y del sistema detrás, no del anuncio solo. Por eso el diagnóstico revisa primero si tu oferta y tu camino están listos. Si pautar todavía no te conviene, te lo digo.",
+    q: "“Ya probé anuncios y no funcionan para mi negocio.”",
+    a: "Probablemente no fallaron los anuncios. Fallaron porque no había una oferta clara ni un camino de compra detrás. En mi método la pauta va al final, el día 15, nunca al principio.",
   },
   {
-    q: "¿Por qué no aprendo todo esto en YouTube?",
-    a: "Puedes, y hay buen contenido. Pero un tutorial es genérico y tu negocio no. Aquí trabajamos sobre tu oferta, tu perfil y tus números, con un plan escrito en el orden correcto, sin que pierdas semanas probando.",
+    q: "“No tengo tiempo para grabar contenido. Quiero que lo hagan todo por mí.”",
+    a: "El sistema se encarga de la captación, el seguimiento automático y la pauta. A ti te deja dos tareas: crear contenido y cerrar ventas. Tu cara y tu voz son lo que vende y nadie puede hacerlo por ti. Si no estás dispuesta/o a aparecer, esto no es para ti, y te lo digo desde ahora.",
   },
   {
-    q: "Ya tengo una página web. ¿Con eso basta?",
-    a: "Una web suelta no es un sistema. Si no está conectada a una oferta clara, un filtro, una agenda y una atención ordenada, es solo una vitrina. El diagnóstico revisa cómo conectar todo.",
+    q: "“Mejor lo aprendo yo con tutoriales de YouTube.”",
+    a: "Puedes. Pero cada fin de semana peleándote con un dominio o una integración es un fin de semana sin atender clientes ni crear contenido. Y armarlo es solo una parte: la pauta hay que operarla todos los meses sin quemar presupuesto.",
   },
   {
-    q: "¿Cómo pago?",
-    a: "Tras el formulario, si calificas, eliges tu horario en Calendly y pagas $79 USD con tarjeta (Stripe/PayPal). Desde Perú también puedes pagar por transferencia o Yape (S/ 297).",
+    q: "“¿15 días? Yo necesito vender ya.”",
+    a: "Lanzar mañana sin preparar nada es exactamente lo que ya hiciste y no te funcionó. En 15 días se ordena tu oferta, se construye el sistema, se capacita a quien responde y recién entonces se lanza. Desde ahí, los resultados se miden.",
   },
   {
-    q: "¿Me garantizas resultados de ventas?",
-    a: "No, y desconfía de quien lo haga. Lo que garantizo es que sales de la sesión con tus fugas identificadas, tu oferta reestructurada y una ruta escrita. Si no es así, te devuelvo el 100%. Los resultados dependen de tu ejecución.",
+    q: "“¿Y si después dependo de ti para todo?”",
+    a: "Te capacito para que entiendas la lógica del sistema y sepas responder a mano sin romper lo que la automatización ya avanzó. Y si terminas tu plan, te llevas tu landing y tu base de datos.",
+  },
+  {
+    q: "“¿Me prometes resultados?”",
+    a: "No. No prometo un número de ventas ni de prospectos. Prometo una oferta clara, un sistema que no deja prospectos perdidos en tu WhatsApp, alguien capacitado para responder y una pauta operada desde el día 15. Mi caso real es uno solo y te lo muestro como lo que es.",
+  },
+  {
+    q: "“¿Qué pasa en el Diagnóstico si veo que no tengo lo necesario?”",
+    a: "Para eso es el Diagnóstico: ver si hay encaje antes de que inviertas en el sistema completo. Si no lo hay, te lo digo.",
   },
 ];
 
-function CtaStack() {
+function Cta({ children = CTA }: { children?: React.ReactNode }) {
   return (
-    <div className="cta-stack">
-      <CtaButton />
-      <p className="micro">$79 USD · Sesión 1 a 1 de 60 min · Garantía de reembolso del 100%</p>
-    </div>
+    <a className="btn btn-lg" href={WA_URL} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
   );
 }
 
-export default function Page() {
+export default function LandingWhatsappPage() {
   return (
-    <>
-      <main id="inicio">
-        {/* BLOQUE 1: HERO */}
-        <section className="block hero">
-          <div className="wrap">
-            <h1 className="display">
-              Dejas la piel creando contenido, pero cuando miras tu cuenta a fin de mes... <span className="highlight">los números no tienen sentido.</span>
-            </h1>
-            <p className="hero-sub">
-              Tu problema no es la falta de seguidores ni el algoritmo. Es que estás intentando vender en medio de un caos operativo sin un camino de compra claro. <span className="strong">Mira este video antes de gastar en anuncios.</span>
-            </p>
-            <VslPlayer />
-            <CtaStack />
+    <main id="inicio">
+      {/* 1 · HERO */}
+      <section className="block hero lp-hero">
+        <div className="wrap">
+          <span className="lp-eyebrow">Para creadores, coaches y consultores que ya tienen audiencia</span>
+          <h1 className="display">
+            Tu problema no es que te falten seguidores. Ya tienes gente que te escribe, y la estás{" "}
+            <span className="highlight">perdiendo en tu WhatsApp.</span>
+          </h1>
+          <p className="hero-sub">
+            El Método Cero Caos ordena tu oferta, arma el camino por donde te compran y enciende la pauta{" "}
+            <span className="strong">recién el día 15</span>, sobre una base que ya puede convertir. Empiezas con un
+            Diagnóstico de S/ 297 que se descuenta por completo si decides avanzar.
+          </p>
+          <div className="cta-stack" style={{ marginTop: 0 }}>
+            <Cta />
+            <p className="micro">Pago único de S/ 297 · Si no recibes tu Manual Cero Caos, te devuelvo lo que pagaste.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* BLOQUE 2: EL ESPEJO DE LA FRUSTRACIÓN */}
-        <section className="block tint">
-          <div className="wrap">
-            <h2 className="h2">No necesitas más <span className="highlight">“reels virales”</span>. Necesitas dejar de perder los clientes que ya te escriben.</h2>
-            <p className="lead">Sé exactamente lo que se siente lo veo en muchos expertos que están al borde del colapso operativo:</p>
-            <ul className="mirror-list">
-              {MIRROR.map((m) => (
-                <li key={m.lead} className="card">
-                  <strong>{m.lead}</strong> {m.text}
-                </li>
-              ))}
-            </ul>
-            <p className="closing">
-              No es porque te falte talento o ganas. Es porque cada solución que probaste arreglaba una pieza suelta, pero nadie se sentó a construir la máquina completa.
+      {/* 2 · VIDEO */}
+      <section className="block tint">
+        <div className="wrap text-center">
+          <h2 className="lp-vsl-title">Mira esto antes de decidir (3 minutos)</h2>
+          {/* Video referencial: se reemplaza al grabar el VSL (SITE.vslYoutubeId en lib/config.ts) */}
+          <VslPlayer />
+          <p className="lp-read">¿Prefieres leer? Sigue bajando: está todo escrito.</p>
+        </div>
+      </section>
+
+      {/* 3 · ESPEJO */}
+      <section className="block">
+        <div className="wrap">
+          <h2 className="h2">
+            ¿Te suena <span className="highlight">alguna de estas escenas?</span>
+          </h2>
+          <ul className="mirror-list">
+            {MIRROR.map((m) => (
+              <li key={m} className="card">
+                {m}
+              </li>
+            ))}
+          </ul>
+          <p className="closing">
+            Si te reconociste en dos o más, escucha esto: no es tu culpa, y tampoco es tu audiencia. Tienes un negocio
+            que funciona por casualidad. <span className="highlight">Y eso se puede ordenar.</span>
+          </p>
+        </div>
+      </section>
+
+      {/* 4 · POR QUÉ NO FUNCIONÓ */}
+      <section className="block tint">
+        <div className="wrap">
+          <h2 className="h2">Lo que te dijeron que hicieras, y por qué te dejó igual</h2>
+          <p className="lead" style={{ marginBottom: 16 }}>
+            El consenso del mercado dice: <em>“Necesitas una web más bonita, hacer reels virales y contratar una agencia
+            que te traiga 100 prospectos al día.”</em>
+          </p>
+          <p className="lead" style={{ marginBottom: 0 }}>
+            Probablemente ya probaste una o varias de esas. Y todas fallan por la misma razón:
+          </p>
+          <ol className="lp-list-n">
+            {FAILS.map((f) => (
+              <li key={f.lead} className="card" style={{ flex: 1 }}>
+                <span>
+                  <strong>{f.lead}</strong> {f.text}
+                </span>
+              </li>
+            ))}
+          </ol>
+          <p className="lp-punch">
+            Los anuncios no fallaron. <span className="highlight">Fallaron porque detrás no había nada.</span>
+          </p>
+        </div>
+      </section>
+
+      {/* 5 · HISTORIA */}
+      <section className="block">
+        <div className="wrap about">
+          <figure className="portrait">
+            {/* Foto referencial: reemplazar por la foto de Carlos mirando a cámara, sonriendo */}
+            <Image
+              src="/carlos.jpg"
+              alt="Carlos Coder"
+              fill
+              sizes="(max-width: 720px) 100vw, 340px"
+              className="portrait-img"
+            />
+            <figcaption className="lp-photo-note">Foto referencial</figcaption>
+          </figure>
+          <div className="about-copy">
+            <h2 className="h2">Yo estuve del otro lado</h2>
+            <p>
+              En marzo de 2023 yo entregaba hasta 4 páginas web al mes. Pasaba más de 10 horas diarias frente a la
+              pantalla, cobraba poco por proyecto y no tenía ni un solo cliente recurrente. Cada mes empezaba de cero,
+              buscando el siguiente contrato.
+            </p>
+            <p>
+              Era “el chico de las webs”. Un ejecutante, no un socio. Y lo peor era darme cuenta de que las webs que
+              entregaba eran escaparates: bonitas, pero sin nada detrás que vendiera.
+            </p>
+            <p>
+              Dejé de aceptar proyectos de solo diseño. Me formé en sistemas de conversión (el camino que recorre
+              alguien hasta comprar), psicología de ventas y pauta en Meta Ads y Google Ads. Uní lo técnico con lo
+              comercial. De ahí nació el <strong>Método Cero Caos</strong>.
+            </p>
+            <p>
+              Hoy hago yo solo lo que normalmente reparten tres personas: construyo tu landing, armo tu captación
+              automática y opero tu pauta. No coordinas a un diseñador, un programador y un trafficker. Tratas directo
+              conmigo.
+            </p>
+            <p >Carlos Coder <br/> <span className="signature">Arquitecto de Sistemas de Venta Digital</span></p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6 · MÉTODO */}
+      <section className="block tint">
+        <div className="wrap">
+          <h2 className="h2">
+            4 pasos, en este orden. <span className="highlight">La pauta va al final, no al principio.</span>
+          </h2>
+          <ol className="steps" style={{ marginTop: 32 }}>
+            {STEPS.map((s, i) => (
+              <li key={s.title} className="card step">
+                <span className="step-n">{i + 1}</span>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </li>
+            ))}
+          </ol>
+
+          <ol className="lp-timeline" aria-label="Línea de tiempo">
+            <li>
+              <span>Días 1–15</span>
+              Construcción
+            </li>
+            <li>
+              <span>Día 15</span>
+              Se enciende la pauta
+            </li>
+            <li>
+              <span>Desde el día 15</span>
+              Medimos con números
+            </li>
+          </ol>
+
+          <div className="lp-note">
+            <h3>Una aclaración honesta</h3>
+            <p>
+              En mi rubro se vende “resultados mañana” porque lanzan sin preparar nada. Yo te cuento la verdad: primero
+              se construye. Por eso no prometo resultados en 30 días ni 100 prospectos al día.
             </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* BLOQUE 3: EL COSTO DE SEGUIR EN EL CAOS */}
-        <section className="block">
-          <div className="wrap">
-            <h2 className="h2">Lo que el caos te cuesta cada mes <span className="highlight">(haz la cuenta)</span></h2>
-            <p className="lead">No se trata de trabajar más duro. Se trata de ver dónde se está evaporando tu dinero:</p>
-            <dl className="cost-grid">
-              {COST.map((c) => (
-                <div key={c.label} className="card cost-item">
-                  <dt>➔ {c.label}</dt>
-                  <dd>{c.value}</dd>
-                </div>
-              ))}
-            </dl>
-            <p className="body-text">
-              Invertir en publicidad sin un sistema detrás es tirar más de $1,000 en seis meses atrayendo curiosos que no compran. A ese desperdicio económico se suma el desgaste de perseguir interesados y la incertidumbre financiera. El caos es el impuesto más alto que paga una marca personal, y se repite cada mes hasta que se pone orden.
-            </p>
-            <p className="anchor">Cada mes sin sistema es dinero quemado en tráfico que no convierte.</p>
+      {/* 7 · QUÉ RECIBES */}
+      <section className="block">
+        <div className="wrap">
+          <h2 className="h2 text-center">
+            Empiezas aquí: el <span className="highlight">Diagnóstico Cero Caos</span>
+          </h2>
+          <div className="lp-table-wrap">
+            <table className="lp-table">
+              <thead>
+                <tr>
+                  <th>Qué recibes</th>
+                  <th>En concreto</th>
+                </tr>
+              </thead>
+              <tbody>
+                {RECEIVE.map((r) => (
+                  <tr key={r.what}>
+                    <th scope="row">{r.what}</th>
+                    <td>{r.how}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        </section>
 
-        {/* BLOQUE 4: LA SOLUCIÓN */}
-        <section className="block tint">
-          <div className="wrap">
-            <h2 className="h2">
-              Primer se ordena la casa. <span className="highlight">Después se enciende el motor.</span>
-            </h2>
-            <p className="lead">
-              La mayoría empieza por el paso 4 (poner anuncios) y por eso falla. Aquí el orden es
-              estricto:
-            </p>
-            <ol className="steps">
-              {STEPS.map((s, i) => (
-                <li key={s.title} className="card step">
-                  <span className="step-n">{i + 1}</span>
-                  <h3>
-                    {s.title}: <span>{s.sub}</span>
-                  </h3>
-                  <p>{s.text}</p>
-                </li>
-              ))}
-            </ol>
-            <p className="closing">Este orden evita que tu inversión en anuncios se pierda.</p>
-          </div>
-        </section>
-
-        {/* BLOQUE 5: LO QUE TE LLEVAS */}
-        <section className="block">
-          <div className="wrap">
-            <h2 className="h2 text-center">Qué incluye el <span className="highlight">Diagnóstico Cero Caos</span></h2>
-            <div className="ticket">
-              <p className="price">
-                $79 USD <span>(Perú: S/ 297)</span>
+          <div className="callouts" style={{ maxWidth: 720, marginInline: "auto" }}>
+            <div className="callout callout-guarantee">
+              <h3>Y si decides avanzar con el sistema</h3>
+              <p>
+                Los S/ 297 se descuentan al 100% de tu primer pago si contratas dentro de los 7 días siguientes a tu
+                Diagnóstico.
               </p>
-              <ul className="checklist">
-                {DELIVERABLES.map((d) => (
-                  <li key={d.lead}>
-                    <CheckIcon className="check" />
-                    <span>
-                      <strong>{d.lead}</strong> {d.text}
-                    </span>
+            </div>
+          </div>
+
+          <div className="lp-includes">
+            <p>
+              <strong>Si el Diagnóstico confirma que hay encaje, el siguiente paso es el Método Cero Caos Completo:</strong>{" "}
+              oferta única, landing de conversión, captación automática a WhatsApp y correo, capacitación de respuesta, y
+              tu pauta operada por mí desde el día 15. Todo corre sobre <strong>Coder App</strong>, mi plataforma de
+              gestión incluida: tu base de clientes, tus métricas y tus mensajes automáticos en un solo lugar. Los
+              detalles y la inversión los vemos en tu sesión.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 8 · PRUEBA */}
+      <section className="block tint">
+        <div className="wrap">
+          <h2 className="h2">
+            Un caso real. <span className="highlight">Uno solo, y te lo cuento como es.</span>
+          </h2>
+          <div className="lp-case">
+            <div>
+              <p>
+                Apliqué el Método Cero Caos a un negocio de servicios de ticket alto que recibía curiosos y estaba en
+                caos operativo.
+              </p>
+              <ul>
+                {CASE_STEPS.map((c) => (
+                  <li key={c}>{c}</li>
+                ))}
+              </ul>
+              <div className="lp-result">
+                <p>
+                  <strong>Resultado:</strong> con <b>S/ 300 de pauta en la primera semana llegaron 11 mensajes</b>. En{" "}
+                  <b>menos de 10 días</b>, contando el seguimiento por WhatsApp y una llamada,{" "}
+                  <b>cerraron 1 cliente calificado de S/ 3,000</b>, que luego continuó con ellos en retención mensual.
+                </p>
+              </div>
+              <p className="lp-disclaimer">
+                <strong>Aclaración importante:</strong> el cliente de S/ 3,000 fue de ese negocio, conseguido con el
+                sistema que yo le armé y le enseñé a operar. Es <strong>un solo caso real, no una garantía</strong> de que
+                a ti te pase lo mismo.
+              </p>
+            </div>
+
+            <div className="lp-media">
+              {/* Referenciales: reemplazar por captura real del panel de pauta + WhatsApp, y video testimonial */}
+              <div className="lp-ph lp-ph-shot" role="img" aria-label="Captura referencial del panel de pauta y WhatsApp">
+                <div>
+                  <strong>Captura referencial</strong>
+                  <span>Panel de pauta + WhatsApp confirmando el cierre</span>
+                </div>
+              </div>
+              <div className="lp-ph lp-ph-video" role="img" aria-label="Video testimonial referencial">
+                <div>
+                  <span className="player-play" style={{ margin: "0 auto 12px" }}>
+                    <PlayIcon />
+                  </span>
+                  <strong>Video referencial</strong>
+                  <span>Testimonio de la dueña del proyecto</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p className="lp-joined">
+            Después del proyecto, me sumaron a su equipo. No solo les funcionó: confiaron lo bastante como para dejarme
+            adentro.
+          </p>
+        </div>
+      </section>
+
+      {/* 9 · PARA QUIÉN */}
+      <section className="block">
+        <div className="wrap">
+          <h2 className="h2 text-center">
+            <span className="highlight">Esto es para ti…</span> o no lo es
+          </h2>
+          <div className="fit-grid">
+            <div className="fit-col fit-yes">
+              <h3>Esto SÍ es para ti si:</h3>
+              <ul>
+                {FOR_YOU.map((t) => (
+                  <li key={t}>
+                    <CheckIcon className="fit-icon" />
+                    <span>{t}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="callouts">
-              <div className="callout callout-guarantee">
-                <h3>Garantía de riesgo cero</h3>
-                <p>
-                  Si al terminar los 60 minutos no sales con tus fugas identificadas y tu ruta
-                  escrita, te devuelvo el 100% de tu dinero. Sin preguntas ni trámites.
-                </p>
-              </div>
-              <div className="callout">
-                <h3>¿Quieres que lo construyamos por ti?</h3>
-                <p>
-                  Si contratas el Setup completo dentro de los 7 días posteriores al diagnóstico,
-                  los $79 USD se descuentan íntegros de la tarifa del setup. El diagnóstico se paga
-                  solo.
-                </p>
-              </div>
-            </div>
-            <CtaStack />
-          </div>
-        </section>
-
-        {/* BLOQUE 6: PRUEBA SOCIAL EN VIDEO */}
-        <section className="block tint">
-          <div className="wrap">
-            <h2 className="h2 text-center">Escúchalo de quienes ya <span className="highlight">pasaron por el diagnóstico</span></h2>
-            <p className="lead text-center">Sin guion y sin edición. Esto es lo que dicen después de la sesión.</p>
-            <div className="testi-grid">
-              {TESTIMONIALS.map((t) => (
-                <figure key={t.who} className="testi">
-                  <ShortPlayer id={t.video} title={`Testimonio: ${t.who}`} />
-                  <figcaption>
-                    <q>{t.quote}</q>
-                    <span>— {t.who}</span>
-                  </figcaption>
-                </figure>
-              ))}
-              <div className="testi testi-cta">
-                <h3>Tú puedes ser el próximo caso de éxito.</h3>
-                <CtaButton size="md" block>
-                  Reservar mi Diagnóstico
-                </CtaButton>
-              </div>
+            <div className="fit-col fit-no">
+              <h3>Esto NO es para ti si:</h3>
+              <ul>
+                {NOT_FOR_YOU.map((t) => (
+                  <li key={t}>
+                    <CrossIcon className="fit-icon" />
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* BLOQUE 7: SOBRE CARLOS CODER */}
-        <section className="block">
-          <div className="wrap about">
-            <figure className="portrait">
-              <Image
-                src="/carlos.jpg"
-                alt="Carlos Coder"
-                fill
-                sizes="(max-width: 720px) 100vw, 340px"
-                className="portrait-img"
-              />
-            </figure>
-            <div className="about-copy">
-              <h2 className="h2">Quién está detrás del diagnóstico</h2>
-              <p>
-                En marzo de 2023 yo era un programador frustrado. Sabía construir cosas, pero no
-                sabía hacer que alguien las comprara. Tenía el producto, el código y las horas, pero
-                no tenía ventas.
-              </p>
-              <p>
-                Ahí entendí algo que hoy aplico con mis clientes: las ventas no se improvisan, se
-                arquitectan. Me metí de lleno en los embudos, en la atención por WhatsApp y en la
-                publicidad pagada, probando con dinero propio y de clientes.
-              </p>
-              <p>
-                Hoy diseño sistemas de ventas para creadores, coaches y consultores
-                la oferta, el camino de conversión y la pauta, todo conectado.
-              </p>
-              <p>
-                No te voy a vender magia. Te voy a mostrar con claridad qué está roto y cómo
-                arreglarlo, en orden.
-              </p>
-              <p className="signature">Carlos Coder, arquitecto de sistemas de ventas y pauta.</p>
-            </div>
+      {/* 10 · INVERSIÓN */}
+      <section className="block tint">
+        <div className="wrap">
+          <h2 className="h2 text-center">
+            Antes de hablar de precio, <span className="highlight">hagamos una cuenta</span>
+          </h2>
+          <p className="lp-sum" style={{ marginInline: "auto", textAlign: "center" }}>
+            Suma cuánto ya gastaste en una web que no vende, en anuncios que no dieron resultado, y cuántos chats se
+            quedaron sin respuesta este mes. Ese es el costo real de tu caos, y hoy lo estás pagando sin recibir nada a
+            cambio.
+          </p>
+
+          <div className="ticket">
+            <p className="price">
+              S/ 297 <span>(pago único)</span>
+            </p>
+            <ul className="checklist">
+              <li>
+                <CheckIcon className="check" />
+                <span>
+                  <strong>Diagnóstico Cero Caos:</strong> sesión 1 a 1 + auditoría + Manual Cero Caos.
+                </span>
+              </li>
+              <li>
+                <CheckIcon className="check" />
+                <span>Se descuenta al 100% si contratas la implementación dentro de los 7 días.</span>
+              </li>
+            </ul>
           </div>
-        </section>
 
-        {/* BLOQUE 8: FILTRO DE CALIDAD */}
-        <section className="block">
-          <div className="wrap">
-            <h2 className="h2 text-center"><span className="highlight">Esto es para ti…</span> o no lo es</h2>
-            <div className="fit-grid">
-              <div className="fit-col fit-yes">
-                <h3>Es para ti si:</h3>
-                <ul>
-                  {FOR_YOU.map((t) => (
-                    <li key={t}>
-                      <CheckIcon className="fit-icon" />
-                      <span>{t}</span>
-                    </li>
-                  ))}
-                </ul>
+          <div className="lp-after">
+            <p>
+              <strong>Y después:</strong> si el Diagnóstico confirma que hay encaje, el sistema completo es una
+              inversión mensual que definimos juntos según tu alcance. Si no lo hay, te lo digo, y te quedas con tu
+              Manual.
+            </p>
+            <p>
+              <strong>Un dato que sí te digo desde ya:</strong> para que la pauta tenga sentido, necesitas poder invertir{" "}
+              <strong>al menos S/ 600 al mes en anuncios</strong>, que pagas directo a Meta o Google. Si hoy no puedes,
+              el sistema completo todavía no es para ti. Tu Diagnóstico sí puede ayudarte a ordenar lo demás.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 11 · REDUCCIÓN DE RIESGO */}
+      <section className="block">
+        <div className="wrap">
+          <h2 className="h2 text-center">
+            Lo que está <span className="highlight">de tu lado</span>
+          </h2>
+          <div className="lp-risk">
+            {RISK.map((r, i) => (
+              <div key={r.title} className={`callout${r.guarantee ? " callout-guarantee" : ""}`}>
+                <h3>
+                  {i + 1}. {r.title}
+                </h3>
+                <p>{r.text}</p>
               </div>
-              <div className="fit-col fit-no">
-                <h3>No es para ti si:</h3>
-                <ul>
-                  {NOT_FOR_YOU.map((t) => (
-                    <li key={t}>
-                      <CrossIcon className="fit-icon" />
-                      <span>{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 12 · FAQ */}
+      <section className="block tint">
+        <div className="wrap narrow">
+          <h2 className="h2 text-center">Preguntas frecuentes</h2>
+          <div className="faq-list">
+            {FAQ.map((f) => (
+              <details key={f.q}>
+                <summary>
+                  <span>{f.q}</span>
+                  <i aria-hidden="true" />
+                </summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 13 · CTA FINAL */}
+      <section className="block final">
+        <div className="wrap narrow">
+          <div className="lp-future">
+            <p>
+              Imagina el primer día del mes sabiendo cuánto vas a facturar, porque tu oferta se entiende al primer
+              vistazo, tu WhatsApp no deja a nadie sin respuesta y tu pauta trae personas que ya saben qué vendes y
+              cuánto cuesta. Tú solo creas contenido y cierras ventas. Tu negocio se siente, por fin, como un negocio de
+              verdad: uno que puedes mostrarle a tu familia con números.
+            </p>
+            <p>
+              Ahora imagina el mismo mes de siempre. Otro domingo con chats sin responder. Otra semana de tutoriales.
+              Otro mes que vas a decidir “a ver si entra algo”.
+            </p>
             <p className="closing">
-              Mejor saberlo ahora que descubrirlo después de pagar. Si te reconoces en la segunda
-              lista, te agradezco que no reserves.
+              La diferencia entre un escenario y el otro es <span className="highlight">una sesión y un documento.</span>
             </p>
           </div>
-        </section>
 
-        {/* BLOQUE 9: FAQ */}
-        <section className="block tint">
-          <div className="wrap narrow">
-            <h2 className="h2 text-center">Preguntas frecuentes</h2>
-            <div className="faq-list">
-              {FAQ.map((f) => (
-                <details key={f.q}>
-                  <summary>
-                    <span>{f.q}</span>
-                    <i aria-hidden="true" />
-                  </summary>
-                  <p>{f.a}</p>
-                </details>
-              ))}
-            </div>
-          </div>
-        </section>
+          <ul className="lp-steps-final">
+            <li>
+              <strong>Qué hacer:</strong> pide tu Diagnóstico Cero Caos.
+            </li>
+            <li>
+              <strong>Cómo:</strong> haz clic en el botón y escríbeme por WhatsApp.
+            </li>
+            <li>
+              <strong>Cuándo:</strong> hoy; agendamos tu sesión en la fecha que elijas.
+            </li>
+            <li>
+              <strong>Qué obtienes:</strong> una sesión 1 a 1 de 60–90 min, la auditoría de tu oferta, tu perfil y tu
+              WhatsApp, y tu Manual Cero Caos con la ruta exacta.
+            </li>
+            <li>
+              <strong>Qué pasa después:</strong> si avanzas dentro de 7 días, tus S/ 297 se descuentan por completo. Si
+              no avanzas, te quedas con tu Manual.
+            </li>
+          </ul>
 
-        {/* BLOQUE 10: CTA FINAL */}
-        <section className="block final">
-          <div className="wrap narrow">
-            <h2 className="h2">Tienes la audiencia. Solo te falta el sistema.</h2>
-            <p className="lead">
-              Deja de quemar presupuesto y depender de la suerte. En 60 minutos detectamos tus fugas, estructuramos tu oferta y trazamos tu ruta por escrito. Garantía de devolución total.
-            </p>
-            <CtaStack />
+          <div className="cta-stack">
+            <Cta>{CTA} — S/ 297</Cta>
+            <p className="micro">Si no recibes tu Manual Cero Caos, te devuelvo lo que pagaste.</p>
           </div>
-        </section>
 
-        <footer className="footer text-center">
-          <div className="wrap narrow">
-            <p>
-              <strong>Descargo de resultados:</strong> Los resultados de casos reales; no son típicos ni garantizan ingresos. El Diagnóstico Cero Caos entrega claridad y estrategia; el éxito depende de tu ejecución.
-            </p>
-            <p>
-              Este sitio no es parte del sitio web de Facebook, Meta Platforms, Inc. ni de Google
-              LLC. Este sitio no está respaldado por Facebook ni Google de ninguna manera.
-            </p>
-            <p className="copyright">© 2026 Carlos Coder. Todos los derechos reservados.</p>
-          </div>
-        </footer>
-      </main>
-      <QualifierModal />
-    </>
+          <p className="lp-ps">
+            <strong>P.D.</strong> Si lo que buscas es solo una página web, o que el marketing lo haga todo sin que
+            aparezcas, esto no es para ti. Si tienes audiencia, estás cansada/o de un negocio que vende de casualidad y
+            quieres ordenarlo de verdad, empecemos por el Diagnóstico.
+          </p>
+        </div>
+      </section>
+
+      <footer className="footer text-center">
+        <div className="wrap narrow">
+          <p>
+            <strong>Descargo de resultados:</strong> Los resultados corresponden a un caso real; no son típicos ni
+            garantizan ingresos. El Diagnóstico Cero Caos entrega claridad y estrategia; el éxito depende de tu
+            ejecución.
+          </p>
+          <p>
+            Este sitio no es parte del sitio web de Facebook, Meta Platforms, Inc. ni de Google LLC. Este sitio no está
+            respaldado por Facebook ni Google de ninguna manera.
+          </p>
+          <p className="copyright">© 2026 Carlos Coder. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </main>
   );
 }

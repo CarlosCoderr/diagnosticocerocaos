@@ -1,7 +1,7 @@
 :root {
   --bg: #ffffff;
   --tint: #f8f9fa;
-  --card: #F6F6F4;
+  --card: #f8f9fa;
   --ink: #252525;
   --ink-2: #1a1a1a;
   --line: #e4e4e7;
@@ -258,7 +258,6 @@ a {
 .micro {
   font-size: 0.9rem;
   text-align: center;
-  max-width: 520px;
 }
 
 /* ---------- 1 · Hero ---------- */
