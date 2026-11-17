@@ -1,46 +1,53 @@
 /* Estilos exclusivos de /landing-whatsapp. Todo con prefijo "lp-" para no tocar la página principal.
    Reutiliza los tokens y clases base de globals.css (.block, .wrap, .card, .btn, .ticket, etc.). */
 
-.lp-eyebrow {
-  display: inline-block;
-  font-size: 0.85rem;
-  font-weight: 700;
+/* Barra superior con texto en bucle (efecto marquee) */
+.lp-marquee {
+  background: #6e8483;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.lp-marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: lp-marquee 40s linear infinite;
+}
+
+.lp-marquee:hover .lp-marquee-track {
+  animation-play-state: paused;
+}
+
+.lp-marquee-item {
+  font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 0.02em;
-  color: #6e8483;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 8px 16px;
-  margin-bottom: 24px;
+  padding-right: 3rem;
+}
+
+.lp-marquee-item::after {
+  content: "•";
+  margin-left: 3rem;
+  opacity: 0.7;
+}
+
+@keyframes lp-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-marquee-track {
+    animation: none;
+  }
 }
 
 .lp-hero .display {
   max-width: none;
   margin-inline: auto;
-}
-
-.lp-hero .hero-sub {
-  max-width: 62ch;
-}
-
-.lp-sub {
-  font-weight: 500;
-  color: var(--ink-2);
-  margin-bottom: 8px;
-}
-
-.lp-vsl-title {
-  font-weight: 800;
-  font-size: clamp(1.25rem, 2.6vw, 1.6rem);
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin-bottom: 20px;
-}
-
-.lp-read {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: 500;
 }
 
 /* Remate en grande */
@@ -345,45 +352,6 @@
   max-width: 68ch;
   margin-bottom: 36px;
   font-size: 1.125rem;
-}
-
-.lp-plans {
-  margin-top: 40px;
-}
-
-.lp-plans h3,
-.lp-transparency h3 {
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-}
-
-.lp-transparency {
-  margin-top: 40px;
-  max-width: 720px;
-  margin-inline: auto;
-}
-
-.lp-transparency ul {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-
-.lp-transparency li {
-  display: flex;
-  gap: 10px;
-}
-
-.lp-transparency li::before {
-  content: "•";
-  color: #6e8483;
-  font-weight: 800;
-}
-
-.lp-fine {
-  font-size: 0.9rem;
 }
 
 /* Riesgo */

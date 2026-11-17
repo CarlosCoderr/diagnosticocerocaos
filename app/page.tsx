@@ -143,10 +143,20 @@ function Cta({ children = CTA }: { children?: React.ReactNode }) {
 export default function LandingWhatsappPage() {
   return (
     <main id="inicio">
+      {/* BARRA SUPERIOR · marquee en bucle */}
+      <div className="lp-marquee" role="note" aria-label="Para creadores, coaches y consultores que ya tienen audiencia">
+        <div className="lp-marquee-track" aria-hidden="true">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <span key={i} className="lp-marquee-item">
+              Para creadores, coaches y consultores que ya tienen audiencia
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* 1 · HERO */}
       <section className="block hero lp-hero">
         <div className="wrap">
-          <span className="lp-eyebrow">Para creadores, coaches y consultores que ya tienen audiencia</span>
           <h1 className="display">
             Tu problema no es que te falten seguidores. Ya tienes gente que te escribe, y la estás{" "}
             <span className="highlight">perdiendo en tu WhatsApp.</span>
@@ -156,20 +166,12 @@ export default function LandingWhatsappPage() {
             <span className="strong">recién el día 15</span>, sobre una base que ya puede convertir. Empiezas con un
             Diagnóstico de S/ 297 que se descuenta por completo si decides avanzar.
           </p>
+
+          <VslPlayer />
           <div className="cta-stack" style={{ marginTop: 0 }}>
             <Cta />
             <p className="micro">Pago único de S/ 297 · Si no recibes tu Manual Cero Caos, te devuelvo lo que pagaste.</p>
           </div>
-        </div>
-      </section>
-
-      {/* 2 · VIDEO */}
-      <section className="block tint">
-        <div className="wrap text-center">
-          <h2 className="lp-vsl-title">Mira esto antes de decidir (3 minutos)</h2>
-          {/* Video referencial: se reemplaza al grabar el VSL (SITE.vslYoutubeId en lib/config.ts) */}
-          <VslPlayer />
-          <p className="lp-read">¿Prefieres leer? Sigue bajando: está todo escrito.</p>
         </div>
       </section>
 

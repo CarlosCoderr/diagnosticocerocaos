@@ -33,7 +33,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-sans), system-ui, sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -61,7 +61,7 @@ p {
   text-wrap: pretty;
 }
 
-.highlight{
+.highlight {
   color: #6E8483;
 }
 
@@ -91,7 +91,7 @@ a {
 }
 
 .wrap {
-  max-width: 1040px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -114,7 +114,6 @@ a {
 }
 
 /* Rejillas de tarjetas: 2 columnas en escritorio y tablet, 1 en móvil */
-.cost-grid,
 .steps {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -127,19 +126,7 @@ a {
   gap: 0;
 }
 
-/* Costo: las 4 tarjetas en una fila; 2 en tablet y 1 en móvil (ver abajo) */
-.cost-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-@media (max-width: 960px) {
-  .cost-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 640px) {
-  .cost-grid,
   .steps {
     grid-template-columns: 1fr;
   }
@@ -153,7 +140,6 @@ a {
   line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--ink);
-  text-wrap: balance;
 }
 
 .h2 {
@@ -173,30 +159,12 @@ a {
   margin-bottom: 40px;
 }
 
-.body-text {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  max-width: 68ch;
-  margin: 36px 0;
-}
-
 .closing {
   font-size: clamp(1.1rem, 1.9vw, 1.3rem);
   font-weight: 600;
   color: var(--ink);
   margin-top: 36px;
   max-width: 760px;
-}
-
-.anchor {
-  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
-  font-weight: 800;
-  line-height: 1.25;
-  color: var(--ink);
-  padding-top: 24px;
-  border-top: 1px solid var(--line);
-  max-width: 32ch;
-  text-wrap: balance;
 }
 
 /* ---------- Buttons ---------- */
@@ -226,15 +194,6 @@ a {
   font-size: clamp(1.1rem, 4.6vw, 1.5rem);
   padding: 18px clamp(24px, 5vw, 40px);
   max-width: 100%;
-}
-
-.btn-md {
-  font-size: 1rem;
-  padding: 16px 32px;
-}
-
-.btn-block {
-  width: 100%;
 }
 
 .btn:hover {
@@ -273,7 +232,7 @@ a {
 
 .hero-sub {
   margin: 0 auto 36px;
-  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   line-height: 1.5;
 }
 
@@ -292,6 +251,7 @@ a {
   overflow: hidden;
   background: #0b1220;
   box-shadow: 0 40px 70px -28px rgba(9, 9, 11, 0.5);
+  margin-bottom: 40px;
 }
 
 .player-video {
@@ -346,23 +306,6 @@ a {
 
 .mirror-list .card {
   font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-  line-height: 1.5;
-  color: var(--ink-2);
-}
-
-/* ---------- 3 · Costo ---------- */
-
-.cost-item dt {
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin-bottom: 8px;
-}
-
-.cost-item dd {
-  font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
   color: var(--ink-2);
 }
@@ -522,14 +465,6 @@ a {
   margin-bottom: 8px;
 }
 
-/* ---------- 6 · Prueba social ---------- */
-
-.testi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: 40px;
-}
-
 .testi {
   display: flex;
   flex-direction: column;
@@ -545,27 +480,6 @@ a {
   background: #0b1220;
   border-radius: var(--radius);
   overflow: hidden;
-}
-
-.short-cover {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  width: 100%;
-  border: 0;
-  cursor: pointer;
-  background-color: #0b1220;
-  background-size: cover;
-  background-position: center;
-}
-
-.short-frame {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 
 .testi figcaption {
@@ -584,25 +498,11 @@ a {
   color: var(--ink-2);
 }
 
-.testi-cta {
-  justify-content: center;
-  text-align: center;
-  padding: 28px 22px;
-  border: 1.5px dashed #d4d4d8;
-  border-radius: var(--radius);
-  background: #fff;
-}
-
-.testi-cta h3 {
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
 /* ---------- 7 · Sobre Carlos ---------- */
 
 .about {
   display: grid;
-  grid-template-columns: minmax(0, 340px) 1fr;
+  grid-template-columns: minmax(0, 400px) 1fr;
   gap: clamp(28px, 5vw, 56px);
   align-items: start;
 }
@@ -768,182 +668,6 @@ a {
 
 .footer .copyright {
   margin: 0;
-}
-
-/* ---------- Modal ---------- */
-
-.modal {
-  width: min(560px, calc(100vw - 24px));
-  padding: 0;
-  border: 0;
-  border-radius: 28px;
-  overflow: hidden;
-  background: #fff;
-}
-
-.modal::backdrop {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(6px);
-}
-
-/* Con el modal abierto, la página de fondo no hace scroll; al cerrarlo se restaura sola. */
-html:has(dialog.modal[open]) {
-  overflow: hidden;
-}
-
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 0;
-  border-radius: 50%;
-  background: var(--tint);
-  color: var(--ink);
-  cursor: pointer;
-}
-
-/* ---------- Formulario de calificación ---------- */
-
-.qf {
-  max-height: min(720px, calc(100dvh - 24px));
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: 64px clamp(20px, 6vw, 36px) 32px;
-}
-
-.qf-progress {
-  height: 6px;
-  border-radius: 999px;
-  background: var(--line);
-  overflow: hidden;
-}
-
-.qf-progress span {
-  display: block;
-  height: 100%;
-  background: #6e8483;
-  transition: width 0.3s var(--ease);
-}
-
-.qf-step {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin: 12px 0 20px;
-}
-
-.qf-title,
-.qf-fieldset legend,
-.qf-end h2 {
-  font-size: clamp(1.2rem, 4.4vw, 1.4rem);
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-}
-
-.qf-title {
-  margin-bottom: 20px;
-}
-
-.qf-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  min-width: 0;
-}
-
-.qf-fieldset legend {
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.qf-options {
-  display: grid;
-  gap: 10px;
-}
-
-.qf-option {
-  font: inherit;
-  text-align: left;
-  color: var(--ink);
-  background: #fff;
-  border: 1.5px solid var(--line);
-  border-radius: 16px;
-  padding: 14px 18px;
-  cursor: pointer;
-  transition:
-    border-color 0.2s var(--ease),
-    background-color 0.2s var(--ease);
-}
-
-.qf-option:hover,
-.qf-option[aria-pressed="true"] {
-  border-color: #6e8483;
-  background: var(--card);
-}
-
-.qf-back {
-  font: inherit;
-  font-size: 0.9rem;
-  color: var(--ink-2);
-  background: none;
-  border: 0;
-  padding: 0;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.qf-field {
-  display: grid;
-  gap: 6px;
-  margin-bottom: 16px;
-}
-
-.qf-field span {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.qf-field input {
-  font: inherit;
-  color: var(--ink);
-  border: 1.5px solid var(--line);
-  border-radius: 14px;
-  padding: 13px 16px;
-  min-width: 0;
-}
-
-.qf-req {
-  color: var(--no);
-  font-weight: 700;
-}
-
-.qf-field input[aria-invalid="true"] {
-  border-color: var(--no);
-}
-
-.qf-error {
-  font-size: 0.85rem;
-  font-style: normal;
-  color: var(--no);
-}
-
-.qf-field input:focus-visible {
-  border-color: var(--ink);
-  outline: none;
-}
-
-.qf-end {
-  display: grid;
-  gap: 16px;
-  justify-items: start;
-  padding-top: 72px;
 }
 
 @media (prefers-reduced-motion: reduce) {
