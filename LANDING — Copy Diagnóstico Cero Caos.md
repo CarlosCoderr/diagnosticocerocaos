@@ -150,7 +150,7 @@ Apliqué el Método Cero Caos a un negocio de servicios de ticket alto que recib
 - Capacité a todo su equipo para responder.
 - Activé su pauta en Meta Ads.
 
-**Resultado:** con **S/ 300 de pauta en la primera semana llegaron 11 mensajes**. En **menos de 10 días**, contando el seguimiento por WhatsApp y una llamada, **cerraron 1 cliente calificado de S/ 3,000**, que luego continuó con ellos en retención mensual.
+**Resultado:** con **S/ 170 de pauta en la primera semana llegaron 17 leads**. En **menos de 10 días**, contando el seguimiento por WhatsApp y una llamada, **cerraron 1 cliente calificado de S/ 3,000**, que luego continuó con ellos en retención mensual. Sobre esos S/ 170 de pauta: **ROAS de 17.64, ROI de 1,664% y S/ 10.00 por lead**.
 
 **Aclaración importante:** el cliente de S/ 3,000 fue de ese negocio, conseguido con el sistema que yo le armé y le enseñé a operar. Es **un solo caso real, no una garantía** de que a ti te pase lo mismo.
 
@@ -284,7 +284,7 @@ La diferencia entre un escenario y el otro es una sesión y un documento.
 7. El camino que arma una oferta clara, una landing que convierte y una pauta que se enciende el día 15.
 8. Si tus chats de la semana pasada siguen sin respuesta, esta es la verdadera razón.
 9. ⭐ Cómo pasar de "un mes sí y otro no" a ingresos que puedes prever, sin prometerte cifras mágicas.
-10. 11 mensajes con S/ 300 de pauta en la primera semana: lo que hicimos antes de encender el primer anuncio.
+10. 17 leads con S/ 170 de pauta en la primera semana: lo que hicimos antes de encender el primer anuncio.
 
 ---
 
@@ -304,7 +304,7 @@ La diferencia entre un escenario y el otro es una sesión y un documento.
 # PENDIENTES ANTES DE PUBLICAR (ordenados por lo que más bloquea)
 
 1. **[TU NÚMERO]** Poner tu número de WhatsApp en el enlace del botón (CTA definido: mensaje con la palabra CERO).
-2. **[CAPTURA REAL]** Paneles de pauta + WhatsApp del cierre, y el video de la dueña del proyecto (Sección 8). En proceso de conseguir.
+2. **[CAPTURA REAL]** Paneles de pauta + WhatsApp del cierre, y el video de la dueña del proyecto (Sección 8). Los archivos existen (permiso, video, audio y capturas); falta cargarlos en la página.
 3. **[FALTA]** Grabar el VSL de 3 min (Sección 2).
 4. **[FOTO]** Foto tuya mirando a cámara (Sección 5). Pendiente para después.
 5. **[POR VALIDAR]** Precios (S/ 297, S/ 2,000/mes, setup S/ 2,500) con los primeros diagnósticos. Ya no se publican en la landing: se presentan en la sesión. Prepara ahí la tabla de planes, los costos a terceros (pauta, WhatsApp API, IA, "desde US$ 15") y el 18% de factura.
@@ -320,7 +320,7 @@ La diferencia entre un escenario y el otro es una sesión y un documento.
 - [x] CTA fórmula Hormozi (Sección 13)
 - [x] 10 bullets para headline (3 con ⭐)
 - [x] Español neutro, sin clichés
-- [x] Cero testimonios o métricas inventados: solo el caso real de S/ 300 / 11 mensajes / S/ 3,000
+- [x] Cero testimonios o métricas inventados: solo el caso real de S/ 170 / 17 leads / S/ 3,000
 - [ ] Bonos apilados: **no incluidos a propósito**. No tienes bonos reales definidos y no se inventan. Si quieres, los diseñamos aparte.
 - [ ] 2 garantías: **solo existe 1 real** (reembolso del Manual). Marcado en Sección 11.
 - [x] Sin urgencia falsa: la única ventana real es la de 7 días del descuento.

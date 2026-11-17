@@ -40,7 +40,7 @@ Sources of truth, in the project root: `PÁGINA DE VENTA — DIAGNÓSTICO CERO C
 
 ## Evidence on Hand
 
-- One real case: a marketing agency selling to aesthetic centers. S/ 300 ad spend in week 1, 11 messages, 1 qualified client paid S/ 3,000, kept on monthly retention, later added Carlos to their team.
+- One real case: a marketing agency selling to aesthetic centers. S/ 170 ad spend in week 1, 11 messages, 1 qualified client paid S/ 3,000, kept on monthly retention, later added Carlos to their team.
 - Pending from the user, not to be invented: the Meta panel capture, the WhatsApp closing capture, the owner's video (`[VIDEO DUEÑA]`), the VSL video file, Carlos's photo (current profile photo not validated), payment details, legal URLs. Absent until supplied; use marked placeholders.
 
 ## Product Principles

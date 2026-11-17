@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { VslPlayer } from "@/components/VslPlayer";
-import { CheckIcon, CrossIcon, PlayIcon } from "@/components/Icons";
+import { CheckIcon, CrossIcon } from "@/components/Icons";
 import "./landing.css";
 
 export const metadata: Metadata = {
@@ -381,24 +381,6 @@ export default function LandingWhatsappPage() {
               </p>
             </div>
 
-            <div className="lp-media">
-              {/* Referenciales: reemplazar por captura real del panel de pauta + WhatsApp, y video testimonial */}
-              <div className="lp-ph lp-ph-shot" role="img" aria-label="Captura referencial del panel de pauta y WhatsApp">
-                <div>
-                  <strong>Captura referencial</strong>
-                  <span>Panel de pauta + WhatsApp confirmando el cierre</span>
-                </div>
-              </div>
-              <div className="lp-ph lp-ph-video" role="img" aria-label="Video testimonial referencial">
-                <div>
-                  <span className="player-play" style={{ margin: "0 auto 12px" }}>
-                    <PlayIcon />
-                  </span>
-                  <strong>Video referencial</strong>
-                  <span>Testimonio de la dueña del proyecto</span>
-                </div>
-              </div>
-            </div>
           </div>
           <p className="lp-joined">
             Después del proyecto, me sumaron a su equipo. No solo les funcionó: confiaron lo bastante como para dejarme

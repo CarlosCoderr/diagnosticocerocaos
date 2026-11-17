@@ -15,7 +15,7 @@
 7. **BLOQUE 7: La Oferta (Qué incluye el Diagnóstico)**
     ◦ **Contenido:** Desglose exacto de los entregables de tu sesión de 60-90 minutos y el documento escrito. Se especifica el precio (**S/ 297**) y el incentivo de descuento sobre el setup si contratan en 7 días.   
 8. **BLOQUE 8: La Prueba Social (El Caso Real)**
-    ◦ **Contenido:** El caso documentado de la agencia de marketing para centros estéticos (S/ 300 de pauta, 11 mensajes y cierre de S/ 3,000 en la primera semana), respaldado con capturas reales y aviso transparente.   
+    ◦ **Contenido:** El caso documentado de la agencia de marketing para centros estéticos (S/ 170 de pauta y 17 leads en la primera semana, y cierre de S/ 3,000 en menos de 10 días), respaldado con capturas reales y aviso transparente.   
 9. **BLOQUE 9: Sobre Mí (Autoridad de Trinchera)**
     ◦ **Contenido:** Tu historia desde marzo de 2023 ("el chico de las webs" cansado de intercambiar tiempo por dinero) hasta convertirte en arquitecto de sistemas y pauta.   
 10. **BLOQUE 10: Filtro de Calidad (Para quién es / Para quién no es)**

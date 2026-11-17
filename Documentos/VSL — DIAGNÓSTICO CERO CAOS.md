@@ -97,7 +97,7 @@
 >
 > Hicimos tres cosas. Ordené su oferta y su proceso comercial. Construí la landing y el camino de compra. Y activé y optimicé las campañas en Meta. Además capacité a todo el equipo.
 >
-> Con S/ 300 de pauta, en la primera semana, llegaron 11 mensajes. Uno era un cliente calificado. Pagó S/ 3,000. La agencia lo fidelizó con una retención mensual. Y después del proyecto, me sumaron a su equipo.
+> Con S/ 170 de pauta, en la primera semana, llegaron 17 leads. Uno era un cliente calificado. Pagó S/ 3,000. Sobre esos S/ 170 de pauta, eso es un ROAS de 17.64 y un ROI de 1,664%, con un costo de S/ 10.00 por lead. La agencia lo fidelizó con una retención mensual. Y después del proyecto, me sumaron a su equipo.
 >
 > Ojo: es un solo caso. No te garantiza que a ti te vaya igual. Lo que te muestra es que cuando hay oferta, camino de compra y alguien que responde bien, un presupuesto chico puede traer gente que paga lo que vale tu servicio.
 >
@@ -159,7 +159,7 @@
 2. Cómo ordenar tu oferta antes de gastar un sol más en anuncios
 3. ⭐ Por qué los anuncios "no te funcionaron" (y no fue por los anuncios)
 4. Los chats de WhatsApp que se enfriaron mientras armabas otra web
-5. Lo que una agencia de centros estéticos hizo con S/ 300 de pauta en la primera semana
+5. Lo que una agencia de centros estéticos hizo con S/ 170 de pauta en la primera semana
 6. ⭐ Una sesión de 60–90 minutos para ver el caos de tu negocio por escrito
 7. Si un mes vendes y al siguiente no entra nada, no es suerte: es falta de sistema
 8. Por qué la pauta va al final y no al principio
@@ -172,7 +172,7 @@
 
 1. **[PRECIO FINAL]** del Diagnóstico (S/ 197, 247 o 297).
 2. **[GARANTÍA]**: decide si ofreces la devolución sugerida; no inventé ninguna.
-3. **[VIDEO DUEÑA] y [CAPTURA REAL]**: confirmar permiso y tener los archivos recortados.
+3. **[VIDEO DUEÑA] y [CAPTURA REAL]**: el permiso, el video y las capturas existen; falta recortarlos y cargarlos.
 4. **Plataforma y formato:** dónde vive el video y si lo grabas a cámara o con pantalla.
 5. **Cómo se cobra:** Yape, transferencia o enlace de pago.
 6. **Más casos:** hoy es solo uno; el guion no inventa otros.

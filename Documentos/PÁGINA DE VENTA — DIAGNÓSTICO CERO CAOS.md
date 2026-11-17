@@ -30,7 +30,7 @@ En una sesión de 60 a 90 minutos ves por escrito dónde se te cae la gente, qu�
 **Botón principal:** Quiero mi Diagnóstico Cero Caos
 **Microtexto bajo el botón:** Te abre WhatsApp. Dime tu nombre y qué vendes. Yo te respondo con los horarios.
 
-**Línea de confianza (debajo):** Un caso real: S/ 300 de pauta, 11 mensajes y un cliente que pagó S/ 3,000 en la primera semana. *(Es un solo caso, no una garantía. Míralo abajo.)*
+**Línea de confianza (debajo):** Un caso real: S/ 170 de pauta y 17 leads en la primera semana, y un cliente que pagó S/ 3,000 en menos de 10 días. *(Es un solo caso, no una garantía. Míralo abajo.)*
 
 ---
 
@@ -136,9 +136,10 @@ Te dicen que necesitas una web más bonita, reels virales y una agencia que te t
 3. Activé y optimicé las campañas en Meta. Además, capacité a todo el equipo.
 
 **El resultado:**
-- S/ 300 de pauta en la primera semana
-- 11 mensajes
+- S/ 170 de pauta en la primera semana
+- 17 leads, a S/ 10.00 por lead
 - 1 cliente calificado que pagó S/ 3,000
+- ROAS de 17.64 y ROI de 1,664% sobre la pauta
 - La agencia lo fidelizó con retención mensual
 - Después del proyecto, me sumaron a su equipo
 
@@ -257,7 +258,7 @@ Escríbeme por WhatsApp con tu nombre y qué vendes hoy. Yo te respondo con los 
 2. Cómo ordenar tu oferta antes de gastar un sol más en anuncios
 3. ⭐ Por qué los anuncios "no te funcionaron" (y no fue por los anuncios)
 4. Los chats de WhatsApp que se enfriaron mientras armabas otra web
-5. Lo que una agencia de centros estéticos hizo con S/ 300 de pauta en la primera semana
+5. Lo que una agencia de centros estéticos hizo con S/ 170 de pauta en la primera semana
 6. ⭐ Una sesión de 60–90 minutos para ver el caos de tu negocio por escrito
 7. Si un mes vendes y al siguiente no entra nada, no es suerte: es falta de sistema
 8. Por qué la pauta va al final y no al principio
@@ -271,7 +272,7 @@ Escríbeme por WhatsApp con tu nombre y qué vendes hoy. Yo te respondo con los 
 1. **[PRECIO FINAL]** del Diagnóstico.
 2. **[GARANTÍA]**: decidir si ofreces la devolución sugerida.
 3. **[NÚMERO WHATSAPP]** y **[CÓMO SE COBRA]**.
-4. **[VIDEO DUEÑA] y [CAPTURA REAL]**: permiso y archivos recortados.
+4. **[VIDEO DUEÑA] y [CAPTURA REAL]**: el permiso, el video y las capturas existen; falta recortarlos y cargarlos en la página.
 5. **[FOTO CARLOS]**: tu foto de perfil actual no está validada (TAB 1.7); conviene rehacerla antes de publicar.
 6. **[URL TÉRMINOS] / [URL PRIVACIDAD]**: Meta rechaza landings sin estos enlaces y sin el aviso de resultados.
 7. **Más casos:** hoy es solo uno; la sección 7 se amplía cuando existan.
