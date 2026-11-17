@@ -368,9 +368,10 @@ export default function LandingWhatsappPage() {
               </ul>
               <div className="lp-result">
                 <p>
-                  <strong>Resultado:</strong> con <b>S/ 300 de pauta en la primera semana llegaron 11 mensajes</b>. En{" "}
+                  <strong>Resultado:</strong> con <b>S/ 170 de pauta en la primera semana llegaron 17 leads</b>. En{" "}
                   <b>menos de 10 días</b>, contando el seguimiento por WhatsApp y una llamada,{" "}
-                  <b>cerraron 1 cliente calificado de S/ 3,000</b>, que luego continuó con ellos en retención mensual.
+                  <b>cerraron 1 cliente calificado de S/ 3,000</b>, que luego continuó con ellos en retención mensual. Sobre esa pauta:{" "}
+                  <b>ROAS de 17.64, ROI de 1,664% y S/ 10.00 por lead</b>.
                 </p>
               </div>
               <p className="lp-disclaimer">
