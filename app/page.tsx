@@ -250,14 +250,14 @@ const FOR_YOU = [
   "Vendes “de casualidad”: un mes entra bien y el siguiente nada.",
   "Ya probaste una web, el botón “Promocionar” o un freelancer de anuncios.",
   "Estás dispuesta/o a aparecer con tu cara y tu voz, a seguir un proceso ordenado y a cerrar las ventas que llegan. Esas dos tareas son tuyas: crear contenido y cerrar ventas.",
-  "Puedes invertir al menos el presupuesto mínimo mensual en anuncios.",
+  "Puedes destinar un presupuesto mínimo mensual en anuncios (entre S/ 400 y S/ 600 soles como base).",
 ];
 
 const NOT_FOR_YOU = [
   "Quieres “solo la web”. (Si es así, no soy tu proveedor y te lo digo con respeto.)",
   "Quieres que el marketing lo haga todo sin que aparezcas ni sigas el proceso.",
   "Buscas “100 prospectos al día” o resultados en 30 días.",
-  "Todavía no tienes nada definido que vender, o no puedes invertir en pauta.",
+  "No tienes definido qué vender o hoy no cuentas con un presupuesto mínimo para pauta (S/ 400 a S/ 600 al mes).",
   "Vendes algo de ticket bajo y no tienes el volumen de ventas que lo compense. (Se evalúa en el Diagnóstico.)",
 ];
 
@@ -334,8 +334,8 @@ export default function LandingWhatsappPage() {
       <section className="block hero lp-hero">
         <div className="wrap">
           <h1 className="display">
-            Tienes audiencia y te escriben.<br/>
-            <span className="highlight">Entonces, ¿por qué tus ventas siguen siendo una ruleta rusa?</span>
+            Tu negocio no sufre por falta de tráfico, sino por falta de
+            <span className="highlight"> un sistema que convierta la atención en dinero predecible.</span>
           </h1>
           <p className="hero-sub">
             El Método Cero Caos ordena tu oferta, arma tu camino de compra y enciende tu pauta{" "}
@@ -510,9 +510,7 @@ export default function LandingWhatsappPage() {
             <span className="highlight">Diseño el camino por donde tu cliente paga con menos fricción.</span>
           </h2>
           <p className="lead text-center" style={{ marginInline: "auto", maxWidth: 980 }}>
-            WhatsApp es una herramienta excelente, pero no es el único destino. La estructura operativa del método es
-            siempre la misma: oferta ordenada, camino de compra, capacitación y pauta el día 15. Lo que cambia es dónde
-            termina el camino de tu cliente:
+            WhatsApp es una herramienta excelente, pero no es el único destino. La estructura de conversión se adapta a ti:
           </p>
           <ul className="adapt-grid">
             {ADAPT.map((a) => (
@@ -528,12 +526,11 @@ export default function LandingWhatsappPage() {
           <div className="adapt-close">
             <h3>¿Y si no usas WhatsApp?</h3>
             <p>
-              Perfecto. El sistema se acopla a tu pasarela o a tu agenda. Lo importante es que el tráfico que llegue a
-              pagar o a agendar esté respaldado por una oferta ordenada y una pauta que no queme dinero.
+              Perfecto. El sistema se acopla a tu pasarela o agenda. Lo importante es que el tráfico que llegue a
+              pagar o agendar esté respaldado por una oferta ordenada y una pauta que no queme dinero.
             </p>
             <p className="adapt-note">
-              Y para empezar conmigo, hoy todo pasa por WhatsApp: es mi forma de atender mientras mi marca arranca. El
-              camino de TU negocio lo diseñamos según cómo vendes tú.
+              El camino de TU negocio lo diseñamos según cómo vendes tú.
             </p>
           </div>
         </div>
@@ -570,9 +567,7 @@ export default function LandingWhatsappPage() {
                 </p>
               </div>
               <p className="lp-disclaimer">
-                <strong>Aclaración importante:</strong> el cliente de ticket alto fue de ese negocio, conseguido con el
-                sistema que yo le armé y le enseñé a operar. Es <strong>un solo caso real, no una garantía</strong> de que
-                a ti te pase lo mismo.
+                <strong>Aclaración importante:</strong> El caso real obtenido con el sistema implementado y operado por el cliente. <strong>Los resultados varían según cada negocio.</strong>
               </p>
             </div>
 
@@ -656,9 +651,7 @@ export default function LandingWhatsappPage() {
 
           <div className="lp-after">
             <p>
-              <strong>Un dato que sí te digo desde ya:</strong> para que la pauta tenga sentido necesitas poder invertir
-              un presupuesto mínimo mensual en anuncios, que pagas directo a Meta o Google. Si hoy no puedes, el sistema
-              completo todavía no es para ti, pero tu Diagnóstico sí puede ayudarte a ordenar lo demás.
+              <strong>Nota importante:</strong> la pauta requiere un presupuesto mensual directo en plataformas (ej. S/ 400 a S/ 600 al mes en Meta Ads/Google Ads). Si hoy no cuentas con él, el sistema completo espera, pero tu Diagnóstico te ordena las bases.
             </p>
           </div>
         </div>
@@ -706,10 +699,7 @@ export default function LandingWhatsappPage() {
         <div className="wrap narrow">
           <div className="lp-future">
             <p>
-              Imagina empezar el mes con tu oferta clara, sin ningún mensaje sin respuesta y con una pauta que trae
-              personas que ya saben qué vendes y cuánto cuesta. Sabes cuántos prospectos entraron, cuánto te costó cada
-              uno y qué toca ajustar, con números y sin suposiciones. Tú solo creas contenido y cierras ventas. Tu negocio se siente, por fin, como un negocio de
-              verdad: uno que puedes mostrarle a tu familia con números.
+              Imagina arrancar el mes con tu oferta ordenada, cero chats al aire y pauta trayendo prospectos calificados que ya saben cuánto cuesta tu servicio. Sin suposiciones, solo métricas claras y control de tu negocio. ¿La alternativa? Otro domingo respondiendo chats a ciegas y otro mes intentando adivinar a ver si entra algo.
             </p>
             <p>
               Ahora imagina el mismo mes de siempre. Otro domingo con chats sin responder. Otra semana de tutoriales.
