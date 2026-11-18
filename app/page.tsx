@@ -39,9 +39,6 @@ const MIRROR = [
     text: "Tus seguidores comentan y te dan like, pero eso no se convierte en ventas.",
     quote: "“El algoritmo me odia.”",
   },
-  {
-    text: "Tu fin de semana se va viendo tutoriales de YouTube para entender un dominio, una pasarela de pago o una integración. Y no te queda tiempo para crear contenido.",
-  },
 ];
 
 const MIRROR_MODELS = [
@@ -357,7 +354,7 @@ export default function LandingWhatsappPage() {
       <section className="block">
         <div className="wrap">
           <h2 className="h2">
-            ¿Cuántas de estas <span className="highlight">te pasan a ti?</span>
+            ¿Cuántas de estas cosas <span className="highlight">te pasan a ti?</span>
           </h2>
           <p className="lead mirror-sub">Marca mentalmente (o con un toque) las que te pasan a ti.</p>
           <MirrorChecklist items={MIRROR} />
@@ -376,7 +373,7 @@ export default function LandingWhatsappPage() {
           </div>
           <div className="mirror-close">
             <p className="closing">
-              Si marcaste dos o más, escucha esto: <strong>no es tu culpa, y tampoco es tu audiencia.</strong> Tienes un
+              <strong>No es tu culpa, y tampoco es tu audiencia.</strong> Tienes un
               negocio que funciona por casualidad. <span className="highlight">Y eso se puede ordenar.</span>
             </p>
             <p className="mirror-next">
@@ -389,9 +386,11 @@ export default function LandingWhatsappPage() {
       {/* 4 · POR QUÉ NO FUNCIONÓ */}
       <section className="block tint">
         <div className="wrap">
-          <h2 className="h2">Lo que te dijeron que hicieras, y por qué te dejó igual</h2>
+          <h2 className="h2">
+            Lo que te dijeron que hicieras, <span className="highlight">y por qué te dejó igual</span>
+          </h2>
           <p className="lead" style={{ marginBottom: 16 }}>
-            El consenso del mercado dice: <em>“Necesitas una web más bonita, hacer reels virales y contratar una agencia
+            El mercado dice: <em>“Necesitas una web más bonita, hacer reels virales y contratar una agencia
             que te traiga 100 prospectos al día.”</em>
           </p>
           <p className="lead" style={{ marginBottom: 0 }}>
@@ -510,7 +509,7 @@ export default function LandingWhatsappPage() {
             No te obligo a vender por WhatsApp.{" "}
             <span className="highlight">Diseño el camino por donde tu cliente paga con menos fricción.</span>
           </h2>
-          <p className="lead text-center" style={{ marginInline: "auto", maxWidth: 720 }}>
+          <p className="lead text-center" style={{ marginInline: "auto", maxWidth: 980 }}>
             WhatsApp es una herramienta excelente, pero no es el único destino. La estructura operativa del método es
             siempre la misma: oferta ordenada, camino de compra, capacitación y pauta el día 15. Lo que cambia es dónde
             termina el camino de tu cliente:
