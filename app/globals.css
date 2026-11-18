@@ -540,7 +540,7 @@ a {
     grid-template-columns: 1fr;
   }
   .portrait {
-    max-width: 280px;
+    max-width: none;
   }
 }
 
