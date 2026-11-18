@@ -368,6 +368,7 @@ a {
   line-height: 1.1;
   padding: clamp(28px, 4vw, 40px);
   border-bottom: 2px dashed var(--line);
+  text-align: center;
 }
 
 .price span {
