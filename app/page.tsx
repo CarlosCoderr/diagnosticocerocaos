@@ -246,18 +246,18 @@ function CaseIcon({ name }: { name: string }) {
 
 const FOR_YOU = [
   "Tienes una audiencia y vendes un programa o servicio propio.",
-  "Tu oferta es de ticket medio-alto: una sola venta cubre buena parte de la inversión.",
+  "Tu oferta es de ticket medio-alto.",
   "Vendes “de casualidad”: un mes entra bien y el siguiente nada.",
   "Ya probaste una web, el botón “Promocionar” o un freelancer de anuncios.",
-  "Estás dispuesta/o a aparecer con tu cara y tu voz, a seguir un proceso ordenado y a cerrar las ventas que llegan. Esas dos tareas son tuyas: crear contenido y cerrar ventas.",
-  "Puedes destinar un presupuesto mínimo mensual en anuncios (entre S/ 400 y S/ 600 soles como base).",
+  "Estás dispuesto a seguir un proceso ordenado y concretar las ventas o citas que llegan. Crear contenido y cerrar ventas es tuyo; el sistema y la pauta son míos.",
+  "Puedes destinar un presupuesto mínimo de S/ 400 al mes en anuncios (pagados directo a la plataforma).",
 ];
 
 const NOT_FOR_YOU = [
   "Quieres “solo la web”. (Si es así, no soy tu proveedor y te lo digo con respeto.)",
   "Quieres que el marketing lo haga todo sin que aparezcas ni sigas el proceso.",
   "Buscas “100 prospectos al día” o resultados en 30 días.",
-  "No tienes definido qué vender o hoy no cuentas con un presupuesto mínimo para pauta (S/ 400 a S/ 600 al mes).",
+  "No tienes definido qué vender o no puedes destinar al menos S/ 400 al mes en anuncios.",
   "Vendes algo de ticket bajo y no tienes el volumen de ventas que lo compense. (Se evalúa en el Diagnóstico.)",
 ];
 
@@ -645,15 +645,10 @@ export default function LandingWhatsappPage() {
             </ul>
             <div className="offer-cta">
               <Cta>Quiero agendar mi Diagnóstico Cero Caos</Cta>
-              <p className="micro">Se abre mi WhatsApp con el mensaje ya escrito y mi asistente te guía para reservar tu fecha y pagar.</p>
+              <p className="micro">Pago único de S/ 297 · Recibes tu Manual Cero Caos máximo 2 días hábiles después de tu sesión, o te devuelvo lo que pagaste.</p>
             </div>
           </div>
 
-          <div className="lp-after">
-            <p>
-              <strong>Nota importante:</strong> la pauta requiere un presupuesto mensual directo en plataformas (ej. S/ 400 a S/ 600 al mes en Meta Ads/Google Ads). Si hoy no cuentas con él, el sistema completo espera, pero tu Diagnóstico te ordena las bases.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -721,7 +716,7 @@ export default function LandingWhatsappPage() {
 
           <p className="lp-ps">
             <strong>P.D.</strong> Si lo que buscas es solo una página web, o que el marketing lo haga todo sin que
-            aparezcas, esto no es para ti. Si tienes audiencia, estás cansada/o de un negocio que vende de casualidad y
+            aparezcas, esto no es para ti. Si tienes audiencia, estás cansado de un negocio que vende de casualidad y
             quieres ordenarlo de verdad, empecemos por el Diagnóstico.
           </p>
 

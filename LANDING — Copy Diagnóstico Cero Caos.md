@@ -178,7 +178,7 @@ Apliqué el Método Cero Caos a un negocio de servicios de ticket alto que recib
 
 **Esto SÍ es para ti si:**
 - Tienes una audiencia y vendes un programa o servicio propio.
-- Tu oferta es de ticket medio-alto: una sola venta cubre buena parte de la inversión.
+- Tu oferta es de ticket medio-alto.
 - Vendes "de casualidad": un mes entra bien y el siguiente nada.
 - Ya probaste una web, el botón "Promocionar" o un freelancer de anuncios.
 - Estás dispuesta/o a aparecer con tu cara y tu voz, a seguir un proceso ordenado y a cerrar las ventas que llegan. Esas dos tareas son tuyas: crear contenido y cerrar ventas.
